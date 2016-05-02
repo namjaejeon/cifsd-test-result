@@ -1,0 +1,721 @@
+================================================================================
+ * SMB TORTURE TEST RESULT
+================================================================================
+
+* Current PASS Count / TOTAL Testcase Count : 10/500
+
+* base
+   |- fdpass : FAIL
+   |
+   |- lock
+   |   |- LOCK1
+   |   |- LOCK2
+   |   |- LOCK3
+   |   |- LOCK4
+   |   |- LOCK5
+   |   |- LOCK6
+   |   |- LOCK7
+   |
+   |- unlink :
+   |- attr :
+   |- trans :
+   |- bithtime :
+   |- negnowait :
+   |- dir1 :
+   |- dir2 :
+   |- deny1 : FAIL
+   |- deny2 :
+   |- deny3 :
+   |- denydos :
+   |- ntdeny1 :
+   |- tcon :
+   |- tcondev :
+   |- vuid : 
+   |- rw : 
+   |- open :
+   |- defer open :
+   |- xcopy
+   |- iometer
+   |- rename
+   |
+   |- delete
+   |   |- deltest1
+   |   |- deltest2
+   |   |- deltest3
+   |   |- deltest4
+   |   |- deltest5
+   |   |- deltest6
+   |   |- deltest7
+   |   |- deltest8
+   |   |- deltest9
+   |   |- deltest10
+   |   |- deltest11
+   |   |- deltest12
+   |   |- deltest13
+   |   |- deltest14
+   |   |- deltest15
+   |   |- deltest16
+   |   |- deltest16a
+   |   |- deltest17
+   |   |- deltest17a
+   |   |- deltest17b
+   |   |- deltest17c
+   |   |- deltest17d
+   |   |- deltest17e
+   |   |- deltest17f
+   |   |- deltest18
+   |   |- deltest19
+   |   |- deltest20
+   |   |- deltest20a
+   |   |- deltest20b
+   |   |- deltest21
+   |   |- deltest22
+   |   |- deltest23
+   |
+   |- properties
+   |- mangle
+   |- openattr
+   |- winattr
+   |
+   |- charset
+   |   |- Testing composite character (a umlaut)
+   |   |- Testing naked diacritical (umlaut) 
+   |   |- Testing partial surrogate
+   |   |- Testing wide-a
+   |
+   |- chkpath
+   |- secleak
+   |- disconnect
+   |
+   |- delaywrite
+   |   |- finfo update on close
+   |   |- delayed update of write time
+   |   |- update of write time and SMBwrite truncate
+   |   |- update of write time and SMBwrite truncate expand
+   |   |- update of write time using SET_END_OF_FILE
+   |   |- update of write time using SET_ALLOCATION_SIZE
+   |   |- delayed update of write time using 2 connections 
+   |   |- delayed update of write time 3
+   |   |- delayed update of write time 3a
+   |   |- delayed update of write time 3b
+   |   |- delayed update of write time 3c
+   |   |- delayed update of write time 4
+   |   |- delayed update of write time 5
+   |   |- delayed update of write time 5b
+   |   |- delayed update of write time 6
+   |   |- timestamp resolution test
+   |   |- directory timestamp update test
+   |
+   |- samba3error
+   |- casetable
+   |- utable
+   |- smb
+   |
+   |- aliases
+   |   |- QFSINFO aliases 
+   |   |- QFILEINFO aliases
+   |   |- QPATHINFO aliases
+   |   |- FINDFIRST aliases
+   |   |- setfileinfo_aliases
+   |   |- setpathinfo_aliases
+   |
+   |- trans2-scan
+   |- nttrans
+   |- createx_access
+   |- createx_sharemodes_file
+   |- createx_sharemodes_dir
+   |- maximum_allowed
+   |- bench-holdcon
+   |- bench-holdopen
+   |- bench-readwrite
+   |- bench-torture
+   |- scan-pipe_number
+   |- scan-ioctl
+   |- scan-maxfid
+
+* raw
+   |- bench-oplock 
+   |- ping-pong
+   |- bench-lock
+   |- bench-open
+   |- bench-lookup
+   |- bench-tcon
+   |- offline
+   |- qfsinfo
+   |- qfileinfo.ipc
+   |
+   |- sfileinfo 
+   |   |- base
+   |   |- rename
+   |   |- bug
+   |   |- end-of-file
+   |   |- end-of-file-access
+   |   |- archive
+   |
+   |- search 
+   |   |- one file search 
+   |   |- many files
+   |   |- sorted
+   |   |- modify search
+   |   |- many dirs
+   |   |- os2 delete
+   |   |- ea list
+   |   |- max count
+   |
+   |- close
+   |
+   |- open 
+   |   |- brlocked 
+   |   |- open
+   |   |- open-multi
+   |   |- openx
+   |   |- ntcreatex
+   |   |- nttrans-create
+   |   |- t2open
+   |   |- mknew
+   |   |- create
+   |   |- ctemp
+   |   |- chained-openx
+   |   |- chained-ntcreatex
+   |   |- no-leading-slash
+   |   |- openx-over-dir
+   |   |- open-for-delete
+   |   |- opendisp-dir
+   |   |- ntcreatedir
+   |   |- open-for-truncate
+   |   |- ntcreatex_supersede
+   |
+   |- mkdir 
+   |
+   |- oplock
+   |   |- exclusive1 
+   |   |- exclusive2 
+   |   |- exclusive3 
+   |   |- exclusive4 
+   |   |- exclusive5 
+   |   |- exclusive6 
+   |   |- exclusive7 
+   |   |- exclusive8 
+   |   |- exclusive9 
+   |   |- level_ii_1
+   |   |- batch1
+   |   |- batch2
+   |   |- batch3
+   |   |- batch4
+   |   |- batch5
+   |   |- batch6
+   |   |- batch7
+   |   |- batch8
+   |   |- batch9
+   |   |- batch9a
+   |   |- batch10
+   |   |- batch11
+   |   |- batch12
+   |   |- batch13
+   |   |- batch14
+   |   |- batch15
+   |   |- batch16
+   |   |- batch17
+   |   |- batch18
+   |   |- batch19
+   |   |- batch20
+   |   |- batch21
+   |   |- batch22
+   |   |- batch23
+   |   |- batch24
+   |   |- batch25
+   |   |- batch26
+   |   |- stream1
+   |   |- doc1 
+   |   |- brl1
+   |   |- brl2
+   |   |- brl3
+   |   |- brl4
+   |
+   |- hold-oplock
+   |
+   |- notify
+   |   |- tcon 
+   |   |- dir
+   |   |- mask
+   |   |- recursive
+   |   |- mask_change
+   |   |- file
+   |   |- tdis
+   |   |- exit
+   |   |- ulogoff
+   |   |- tcp_dis
+   |   |- double
+   |   |- tree
+   |   |- overflow
+   |   |- basedir
+   |   |- alignement
+   |
+   |- mux 
+   |- ioctl
+   |- chkpath
+   |- unlink
+   |   |- unlink 
+   |   |- delete_on_close
+   |   |- unlink-defer
+   |
+   |- read
+   |   |- read
+   |   |- readx
+   |   |- lockread 
+   |   |- readbraw
+   |   |- read for execute
+   |
+   |- write 
+   |   |- write
+   |   |- write unlock
+   |   |- write close
+   |   |- writex
+   |
+   |- lock 
+   |   |- lockx
+   |   |- lock
+   |   |- pidhigh 
+   |   |- async
+   |   |- errorcode 
+   |   |- changetype
+   |   |- stacking
+   |   |- unlock
+   |   |- multiple_unlock
+   |   |- zerobytelocks 
+   |   |- zerobyteread
+   |   |- multilock
+   |   |- multilock2
+   |
+   |- context 
+   |   |- session1
+   |   |- tree
+   |   |- tree_ulogoff
+   |   |- pid_only_sess
+   |   |- pid_2sess
+   |   |- pid_2tcon
+   |
+   |- session
+   |   |- reauth1 
+   |   |- reauth2
+   |   |- expire1
+   |
+   |- rename
+   |   |- mv
+   |   |- trans2rename
+   |   |- nttransrename
+   |   |- ntrename
+   |   |- osxrename
+   |   |- directory rename
+   |
+   |- seek
+   |- eas
+   |
+   |- streams
+   |   |- dir
+   |   |- io
+   |   |- sharemodes
+   |   |- delete
+   |   |- names
+   |   |- names2
+   |   |- rename 
+   |   |- rename2 
+   |   |- rename3
+   |   |- createdisp
+   |   |- attr
+   |   |- sumtab
+   |   |- perms
+   |
+   |- acls
+   |   |- sd 
+   |   |- create_file
+   |   |- create_dir
+   |   |- nulldacl
+   |   |- creator
+   |   |- generic
+   |   |- owner
+   |   |- inheritance
+   |   |- INHERITFLAGS
+   |   |- dynamic
+   |
+   |- composite 
+   |   |- fetchfile
+   |   |- loadfile
+   |   |- appendacl
+   |   |- fsinfo
+   |
+   |- samba3hide
+   |- samba3oplocklogoff
+   |- samba3badnameblob 
+   |- samba3badpath
+   |- samba3caseinsensitive
+   |- samba3posixtimedlock
+   |- scan-eamax
+ 
+* auth
+   |- ntlmssp
+   |   |- NTLMSSP self check
+   |
+   |- pac
+   |   |- self check 
+   |   |- saved check
+   | 
+   |- smbencrypt
+   |   |- deshash check
+
+* smb2
+   |- connect :
+   |
+   |- scan
+   |   |- scan
+   |   |- getinfo
+   |   |- setinfo
+   |   |- find
+   |
+   |- getinfo
+   |   |- complex
+   |   |- fsinfo
+   |   |- qfs_buffercheck
+   |   |- qfile_buffercheck
+   |   |- qsec_buffercheck
+   |
+   |- setinfo :
+   |
+   |- lock
+   |   |- valid-request : PASS
+   |   |- rw-none
+   |   |- rw-shared
+   |   |- rw-exclusive
+   |   |- auto-unlock
+   |   |- lock
+   |   |- async
+   |   |- cancel
+   |   |- cancel-tdis
+   |   |- cancel-logoff
+   |   |- errorcode
+   |   |- zerobytelength
+   |   |- zerobyteread
+   |   |- unlock
+   |   |- multiple-unlock
+   |   |- stacking
+   |   |- contend
+   |   |- context
+   |   |- range
+   |   |- overlap
+   |   |- truncate
+   |   |- reply
+   |
+   |- read
+   |   |- eof
+   |   |- position
+   |   |- dir
+   |
+   |- create
+   |   |- gentest
+   |   |- blob
+   |   |- open
+   |   |- brlocked
+   |   |- multi
+   |   |- delete
+   |   |- leading-slash
+   |   |- impersonation
+   |   |- acfile
+   |   |- nulldacl
+   |   |- mkdir-dup
+   |   |- dir-alloc-size
+   |
+   |- acls
+   |   |- CREATOR
+   |   |- GENERIC
+   |   |- OWNER
+   |   |- INHERITANCE
+   |   |- INHERITFLAGS
+   |   |- DYNAMIC
+   |   |- ACCESSBASED
+   |
+   |- compound
+   |   |- related1
+   |   |- related2
+   |   |- related3
+   |   |- unrelated1
+   |   |- invalid1
+   |   |- invalid2
+   |   |- invalid3
+   |   |- interim1
+   |   |- interim2
+   |   |- compound-break
+   |   |- compound-padding
+   |
+   |- notify
+   |   |- valid-req
+   |   |- tcon
+   |   |- dir
+   |   |- mask
+   |   |- tdis
+   |   |- tdis1
+   |   |- mask-change
+   |   |- close
+   |   |- logoff
+   |   |- session-reconnect
+   |   |- invalid-reauth
+   |   |- tree
+   |   |- basedir
+   |   |- double
+   |   |- file
+   |   |- tcp
+   |   |- rec
+   |   |- overflow
+   |   |- rmdir1
+   |   |- rmdir2
+   |   |- rmdir3
+   |   |- rmdir4
+   |
+   |- notfiy_disabled
+   |
+   |- durable-open
+   |   |- open-oplock
+   |   |- open-lease
+   |   |- reopen1
+   |   |- reopen1a
+   |   |- reopen2
+   |   |- reopen2-lease
+   |   |- reopen2-lease-v2
+   |   |- reopen2a
+   |   |- reopen3
+   |   |- reopen4
+   |   |- delete_on_close1 
+   |   |- delete_on_close2
+   |   |- oplock
+   |   |- lease
+   |   |- lock-oplock
+   |   |- lock-lease
+   |   |- open2-lease
+   |   |- open2-oplock
+   |   |- alloc-size
+   |   |- read-only
+   |
+   |- durable-open-disconnect
+   |   |- open-oplock-disconnect
+   |
+   |- durable-v2-open
+   |   |- create-blob
+   |   |- open-oplock
+   |   |- open-lease
+   |   |- reopen1
+   |   |- reopen1a
+   |   |- reopen2
+   |   |- reopen2b
+   |   |- reopen2-lease
+   |   |- reopen2-lease-v2
+   |   |- app-instance
+   |   |- persistent-open-oplock
+   |   |- persistent-open-lease
+   |
+   |- dir
+   |   |- find
+   |   |- fixed
+   |   |- one
+   |   |- many
+   |   |- modify
+   |   |- sorted
+   |   |- file-index
+   |   |- large-files
+   |
+   |- lease
+   |   |- request
+   |   |- break_twice
+   |   |- nobreakself
+   |   |- statopen
+   |   |- upgrade
+   |   |- upgrade2
+   |   |- upgrade3
+   |   |- break
+   |   |- oplock
+   |   |- multibreak
+   |   |- breaking1
+   |   |- breaking2
+   |   |- breaking3
+   |   |- v2_breaking3
+   |   |- breaking4
+   |   |- breaking5
+   |   |- breaking6
+   |   |- lock1
+   |   |- complex1
+   |   |- v2_request_parent
+   |   |- v2_request
+   |   |- v2_epoch1
+   |   |- v2_epoch2
+   |   |- v2_epoch3
+   |   |- v2_complex1
+   |   |- v2_complex2
+   |   |- v2_rename
+   |   |- dynamic_share
+   |   |- timeout
+   |
+   |- compound
+   |   |- related1
+   |   |- related2
+   |   |- related3
+   |   |- unrelated1
+   |   |- invalid1
+   |   |- invalid2
+   |   |- invalid3
+   |   |- interim1
+   |   |- interim2
+   |   |- compound-break
+   |   |- compound-padding
+   |
+   |- oplock
+   |   |- exclusive1
+   |   |- exclusive2
+   |   |- exclusive3
+   |   |- exclusive4
+   |   |- exclusive5
+   |   |- exclusive6
+   |   |- exclusive9
+   |   |- batch1
+   |   |- batch2
+   |   |- batch3
+   |   |- batch4
+   |   |- batch5
+   |   |- batch6
+   |   |- batch7
+   |   |- batch8
+   |   |- batch9
+   |   |- batch9a
+   |   |- batch10
+   |   |- batch11
+   |   |- batch12
+   |   |- batch13
+   |   |- batch14
+   |   |- batch15
+   |   |- batch16
+   |   |- batch19
+   |   |- batch20
+   |   |- batch21
+   |   |- batch22
+   |   |- batch23
+   |   |- batch24
+   |   |- batch25
+   |   |- batch26
+   |   |- stream1
+   |   |- doc
+   |   |- brl1
+   |   |- brl2
+   |   |- brl3
+   |   |- levelii500 
+   |   |- levelii501
+   |
+   |- stream
+   |   |- dir
+   |   |- io
+   |   |- sharemodes
+   |   |- names
+   |   |- name2
+   |   |- rename
+   |   |- rename2
+   |   |- create-disposition 
+   |   |- attributes
+   |   |- delete
+   |   |- zero-byte
+   |
+   |- ioctl
+   |   |- shadow_copy 
+   |   |- req_resume_key
+   |   |- copy_chunk_simple
+   |   |- copy_chunk_multi
+   |   |- copy_chunk_tiny
+   |   |- copy_chunk_overwrite
+   |   |- copy_chunk_append
+   |   |- copy_chunk_limits
+   |   |- copy_chunk_src_lock
+   |   |- copy_chunk_dest_lock
+   |   |- copy_chunk_bad_key
+   |   |- copy_chunk_src_is_dest 
+   |   |- copy_chunk_src_is_dest_overlap
+   |   |- copy_chunk_bad_access
+   |   |- copy_chunk_write_access
+   |   |- copy_chunk_src_exceed
+   |   |- copy_chunk_src_exceed_multi
+   |   |- copy_chunk_sparse_dest 
+   |   |- copy_chunk_max_output_sz
+   |   |- copy_chunk_zero_length
+   |   |- compress_file_flag
+   |   |- compress_dir_inherit
+   |   |- compress_invalid_format
+   |   |- compress_invalid_buf
+   |   |- compress_query_file_attr
+   |   |- compress_create_with_attr
+   |   |- compress_inherit_disable
+   |   |- compress_set_file_attr
+   |   |- compress_perms 
+   |   |- network_interface_info
+   |   |- sparse_file_flag
+   |   |- sparse_file_attr
+   |   |- sparse_dir_flag
+   |   |- sparse_set_nobuf
+   |   |- sparse_set_oversize
+   |   |- sparse_qar
+   |   |- sparse_qar_malformed
+   |   |- sparse_punch
+   |   |- sparse_hole_dealloc
+   |   |- sparse_compressed 
+   |   |- sparse_copy_chunk
+   |   |- sparse_punch_invalid
+   |   |- sparse_perms
+   |   |- sparse_lock
+   |   |- sparse_qar_ob1
+   |   |- sparse_qar_multi
+   |   |- sparse_qar_overflow
+   |   |- trim_simple
+   |
+   |- rename
+   |   |- simple
+   |   |- simple_nodelete
+   |   |- no_sharing
+   |   |- share_delete_and_delete_access
+   |   |- no_share_delete_but_delete_access
+   |   |- share_delete_no_delete_access
+   |   |- no_share_delete_no_delete_access
+   |   |- msword
+   |   |- rename_dir_openfile
+   |   |- rename_dir_bench
+   |
+   |- bench-oplock :
+   |
+   |- hold-oplock :
+   |
+   |- session
+   |   |- reconnect1 
+   |   |- reconnect2
+   |   |- reauth1
+   |   |- reauth2
+   |   |- reauth3
+   |   |- reauth4
+   |   |- reauth5
+   |   |- reauth6
+   |   |- expire1
+   |   |- bind1
+   |
+   |- reply
+   |   |- replay-commands
+   |   |- replay-regular 
+   |   |- replay-dhv2-oplock1
+   |   |- replay-dhv2-oplock2
+   |   |- replay-dhv2-oplock3
+   |   |- replay-dhv2-oplock-lease
+   |   |- replay-dhv2-lease1
+   |   |- replay-dhv2-lease2
+   |   |- replay-dhv2-lease3
+   |   |- replay-dhv2-oplock-oplock
+   |   |- replay3
+   |   |- replay4
+   |   |- replay5
+   |
+   |- delete-on-close
+       |- OVERWRITE_IF
+       |- OVERWRITE_IF Existing
+       |- CREATE
+       |- CREATE Existing
+       |- CREATE_IF
+       |- CREATE_IF Existing
