@@ -2,720 +2,720 @@
  * SMB TORTURE TEST RESULT
 ================================================================================
 
-* Current PASS Count / TOTAL Testcase Count : 10/500
+* Current PASS Count / TOTAL Testcase Count : 97/608
 
 * base
-   |- fdpass : FAIL
+   |- fdpass : PASS
    |
    |- lock
-   |   |- LOCK1
-   |   |- LOCK2
-   |   |- LOCK3
-   |   |- LOCK4
-   |   |- LOCK5
-   |   |- LOCK6
-   |   |- LOCK7
+   |   |- LOCK1 : FAIL
+   |   |- LOCK2 : FAIL
+   |   |- LOCK3 : FAIL
+   |   |- LOCK4 : FAIL
+   |   |- LOCK5 : FAIL
+   |   |- LOCK6 : FAIL
+   |   |- LOCK7 : FAIL
    |
-   |- unlink :
-   |- attr :
-   |- trans :
-   |- bithtime :
-   |- negnowait :
-   |- dir1 :
-   |- dir2 :
+   |- unlink : FAIL
+   |- attr : FAIL
+   |- trans2 : FAIL
+   |- bithtime : FAIL
+   |- negnowait : PASS
+   |- dir1 : PASS
+   |- dir2 : FAIL
    |- deny1 : FAIL
-   |- deny2 :
-   |- deny3 :
-   |- denydos :
-   |- ntdeny1 :
-   |- tcon :
-   |- tcondev :
-   |- vuid : 
-   |- rw : 
-   |- open :
-   |- defer open :
-   |- xcopy
-   |- iometer
-   |- rename
+   |- deny2 : FAIL
+   |- deny3 : PASS
+   |- denydos : FAIL
+   |- ntdeny1 : PASS
+   |- tcon : FAIL(crash)
+   |- tcondev : FAIL(crash)
+   |- vuid : PASS
+   |- rw1 : FAIL
+   |- open : FAIL
+   |- defer_open : FAIL
+   |- xcopy : PASS
+   |- iometer : FAIL
+   |- rename : FAIL
    |
    |- delete
-   |   |- deltest1
-   |   |- deltest2
-   |   |- deltest3
-   |   |- deltest4
-   |   |- deltest5
-   |   |- deltest6
-   |   |- deltest7
-   |   |- deltest8
-   |   |- deltest9
-   |   |- deltest10
-   |   |- deltest11
-   |   |- deltest12
-   |   |- deltest13
-   |   |- deltest14
-   |   |- deltest15
-   |   |- deltest16
-   |   |- deltest16a
-   |   |- deltest17
-   |   |- deltest17a
-   |   |- deltest17b
-   |   |- deltest17c
-   |   |- deltest17d
-   |   |- deltest17e
-   |   |- deltest17f
-   |   |- deltest18
-   |   |- deltest19
-   |   |- deltest20
-   |   |- deltest20a
-   |   |- deltest20b
-   |   |- deltest21
-   |   |- deltest22
-   |   |- deltest23
+   |   |- deltest1 : PASS
+   |   |- deltest2 : PASS
+   |   |- deltest3 : FAIL
+   |   |- deltest4 : FAIL
+   |   |- deltest5 : PASS
+   |   |- deltest6 : PASS
+   |   |- deltest7 : FAIL
+   |   |- deltest8 : FAIL
+   |   |- deltest9 : PASS
+   |   |- deltest10 : PASS
+   |   |- deltest11 : FAIL
+   |   |- deltest12 : FAIL
+   |   |- deltest13 : FAIL
+   |   |- deltest14 : FAIL
+   |   |- deltest15 : FAIL
+   |   |- deltest16 : FAIL
+   |   |- deltest16a : FAIL
+   |   |- deltest17 : FAIL
+   |   |- deltest17a : FAIL
+   |   |- deltest17b : FAIL
+   |   |- deltest17c : FAIL
+   |   |- deltest17d : FAIL
+   |   |- deltest17e : FAIL
+   |   |- deltest17f : FAIL
+   |   |- deltest18 : FAIL
+   |   |- deltest19 : FAIL
+   |   |- deltest20 : FAIL
+   |   |- deltest20a : FAIL
+   |   |- deltest20b : FAIL
+   |   |- deltest21 : FAIL
+   |   |- deltest22 : FAIL
+   |   |- deltest23 : FAIL
    |
-   |- properties
-   |- mangle
-   |- openattr
-   |- winattr
+   |- properties : PASS
+   |- mangle : FAIL
+   |- openattr : FAIL
+   |- winattr : FAIL
    |
    |- charset
-   |   |- Testing composite character (a umlaut)
-   |   |- Testing naked diacritical (umlaut) 
-   |   |- Testing partial surrogate
-   |   |- Testing wide-a
+   |   |- Testing composite character (a umlaut) : FAIL
+   |   |- Testing naked diacritical (umlaut) : FAIL
+   |   |- Testing partial surrogate : FAIL
+   |   |- Testing wide-a : FAIL
    |
-   |- chkpath
-   |- secleak
-   |- disconnect
+   |- chkpath : FAIL
+   |- secleak : PASS
+   |- disconnect : FAIL
    |
    |- delaywrite
-   |   |- finfo update on close
-   |   |- delayed update of write time
-   |   |- update of write time and SMBwrite truncate
-   |   |- update of write time and SMBwrite truncate expand
-   |   |- update of write time using SET_END_OF_FILE
-   |   |- update of write time using SET_ALLOCATION_SIZE
-   |   |- delayed update of write time using 2 connections 
-   |   |- delayed update of write time 3
-   |   |- delayed update of write time 3a
-   |   |- delayed update of write time 3b
-   |   |- delayed update of write time 3c
-   |   |- delayed update of write time 4
-   |   |- delayed update of write time 5
-   |   |- delayed update of write time 5b
-   |   |- delayed update of write time 6
-   |   |- timestamp resolution test
-   |   |- directory timestamp update test
+   |   |- finfo update on close : FAIL
+   |   |- delayed update of write time : FAIL
+   |   |- update of write time and SMBwrite truncate : FAIL
+   |   |- update of write time and SMBwrite truncate expand : FAIL
+   |   |- update of write time using SET_END_OF_FILE : FAIL
+   |   |- update of write time using SET_ALLOCATION_SIZE : FAIL
+   |   |- delayed update of write time using 2 connections : FAIL 
+   |   |- delayed update of write time 3 : FAIL
+   |   |- delayed update of write time 3a : FAIL
+   |   |- delayed update of write time 3b : FAIL
+   |   |- delayed update of write time 3c : FAIL
+   |   |- delayed update of write time 4 : FAIL
+   |   |- delayed update of write time 5 : FAIL
+   |   |- delayed update of write time 5b : FAIL
+   |   |- delayed update of write time 6 : FAIL
+   |   |- timestamp resolution test : FAIL
+   |   |- directory timestamp update test : FAIL
    |
-   |- samba3error
-   |- casetable
-   |- utable
-   |- smb
+   |- samba3error : PASS
+   |- casetable : FAIL
+   |- utable : FAIL
+   |- smb : FAIL(crash)
    |
    |- aliases
-   |   |- QFSINFO aliases 
-   |   |- QFILEINFO aliases
-   |   |- QPATHINFO aliases
-   |   |- FINDFIRST aliases
-   |   |- setfileinfo_aliases
-   |   |- setpathinfo_aliases
+   |   |- QFSINFO aliases : PASS
+   |   |- QFILEINFO aliases : PASS
+   |   |- QPATHINFO aliases : PASS
+   |   |- FINDFIRST aliases : PASS
+   |   |- setfileinfo_aliases : FAIL
+   |   |- setpathinfo_aliases : FAIL
    |
-   |- trans2-scan
-   |- nttrans
-   |- createx_access
-   |- createx_sharemodes_file
-   |- createx_sharemodes_dir
-   |- maximum_allowed
-   |- bench-holdcon
-   |- bench-holdopen
-   |- bench-readwrite
-   |- bench-torture
-   |- scan-pipe_number
-   |- scan-ioctl
-   |- scan-maxfid
+   |- trans2-scan : FAIL(crash)
+   |- nttrans : PASS
+   |- createx_access : FAIL
+   |- createx_sharemodes_file : FAIL
+   |- createx_sharemodes_dir : FAIL
+   |- maximum_allowed : FAIL
+   |- bench-holdcon : PASS
+   |- bench-holdopen : PASS
+   |- bench-readwrite : PASS
+   |- bench-torture : FAIL
+   |- scan-pipe_number : PASS
+   |- scan-ioctl : PASS
+   |- scan-maxfid : FAIL
 
 * raw
-   |- bench-oplock 
-   |- ping-pong
-   |- bench-lock
-   |- bench-open
-   |- bench-lookup
-   |- bench-tcon
-   |- offline
-   |- qfsinfo
-   |- qfileinfo.ipc
+   |- bench-oplock : PASS
+   |- ping-pong : FAIL
+   |- bench-lock : FAIL
+   |- bench-open : FAIL
+   |- bench-lookup : FAIL
+   |- bench-tcon : PASS
+   |- offline : FAIL
+   |- qfsinfo : FAIL
+   |- qfileinfo.ipc : FAIL
    |
    |- sfileinfo 
-   |   |- base
-   |   |- rename
-   |   |- bug
-   |   |- end-of-file
-   |   |- end-of-file-access
-   |   |- archive
+   |   |- base : FAIL
+   |   |- rename : FAIL
+   |   |- bug : FAIL
+   |   |- end-of-file : FAIL
+   |   |- end-of-file-access : FAIL
+   |   |- archive : FAIL
    |
    |- search 
-   |   |- one file search 
-   |   |- many files
-   |   |- sorted
-   |   |- modify search
-   |   |- many dirs
-   |   |- os2 delete
-   |   |- ea list
-   |   |- max count
+   |   |- one file search : FAIL
+   |   |- many files : FAIL
+   |   |- sorted : FAIL
+   |   |- modify search : FAIL
+   |   |- many dirs : FAIL
+   |   |- os2 delete : FAIL
+   |   |- ea list : FAIL
+   |   |- max count : FAIL
    |
-   |- close
+   |- close : FAIL
    |
-   |- open 
-   |   |- brlocked 
-   |   |- open
-   |   |- open-multi
-   |   |- openx
-   |   |- ntcreatex
-   |   |- nttrans-create
-   |   |- t2open
-   |   |- mknew
-   |   |- create
-   |   |- ctemp
-   |   |- chained-openx
-   |   |- chained-ntcreatex
-   |   |- no-leading-slash
-   |   |- openx-over-dir
-   |   |- open-for-delete
-   |   |- opendisp-dir
-   |   |- ntcreatedir
-   |   |- open-for-truncate
-   |   |- ntcreatex_supersede
+   |- open
+   |   |- brlocked : FAIL
+   |   |- open : FAIL
+   |   |- open-multi : PASS
+   |   |- openx : FAIL
+   |   |- ntcreatex : FAIL
+   |   |- nttrans-create : FAIL
+   |   |- t2open : FAIL
+   |   |- mknew : FAIL
+   |   |- create : FAIL
+   |   |- ctemp : FAIL
+   |   |- chained-openx : FAIL
+   |   |- chained-ntcreatex : FAIL
+   |   |- no-leading-slash : FAIL
+   |   |- openx-over-dir : FAIL
+   |   |- open-for-delete : FAIL
+   |   |- opendisp-dir : FAIL
+   |   |- ntcreatedir : FAIL
+   |   |- open-for-truncate : FAIL
+   |   |- ntcreatex_supersede : FAIL
    |
-   |- mkdir 
+   |- mkdir : FAIL
    |
    |- oplock
-   |   |- exclusive1 
-   |   |- exclusive2 
-   |   |- exclusive3 
-   |   |- exclusive4 
-   |   |- exclusive5 
-   |   |- exclusive6 
-   |   |- exclusive7 
-   |   |- exclusive8 
-   |   |- exclusive9 
-   |   |- level_ii_1
-   |   |- batch1
-   |   |- batch2
-   |   |- batch3
-   |   |- batch4
-   |   |- batch5
-   |   |- batch6
-   |   |- batch7
-   |   |- batch8
-   |   |- batch9
-   |   |- batch9a
-   |   |- batch10
-   |   |- batch11
-   |   |- batch12
-   |   |- batch13
-   |   |- batch14
-   |   |- batch15
-   |   |- batch16
-   |   |- batch17
-   |   |- batch18
-   |   |- batch19
-   |   |- batch20
-   |   |- batch21
-   |   |- batch22
-   |   |- batch23
-   |   |- batch24
-   |   |- batch25
-   |   |- batch26
-   |   |- stream1
-   |   |- doc1 
-   |   |- brl1
-   |   |- brl2
-   |   |- brl3
-   |   |- brl4
+   |   |- exclusive1 : FAIL
+   |   |- exclusive2 : FAIL 
+   |   |- exclusive3 : FAIL
+   |   |- exclusive4 : FAIL
+   |   |- exclusive5 : FAIL
+   |   |- exclusive6 : FAIL
+   |   |- exclusive7 : FAIL
+   |   |- exclusive8 : FAIL
+   |   |- exclusive9 : FAIL
+   |   |- level_ii_1 : FAIL
+   |   |- batch1 : FAIL
+   |   |- batch2 : FAIL
+   |   |- batch3 : FAIL
+   |   |- batch4 : FAIL
+   |   |- batch5 : FAIL
+   |   |- batch6 : FAIL
+   |   |- batch7 : FAIL
+   |   |- batch8 : FAIL
+   |   |- batch9 : FAIL
+   |   |- batch9a : FAIL
+   |   |- batch10 : FAIL
+   |   |- batch11 : FAIL
+   |   |- batch12 : FAIL
+   |   |- batch13 : FAIL
+   |   |- batch14 : FAIL
+   |   |- batch15 : FAIL
+   |   |- batch16 : FAIL
+   |   |- batch17 : FAIL
+   |   |- batch18 : FAIL
+   |   |- batch19 : FAIL
+   |   |- batch20 : FAIL
+   |   |- batch21 : FAIL
+   |   |- batch22 : FAIL
+   |   |- batch23 : FAIL
+   |   |- batch24 : FAIL
+   |   |- batch25 : FAIL
+   |   |- batch26 : FAIL
+   |   |- stream1 : FAIL
+   |   |- doc1 : FAIL
+   |   |- brl1 : FAIL
+   |   |- brl2 : FAIL
+   |   |- brl3 : FAIL
+   |   |- brl4 : FAIL
    |
-   |- hold-oplock
+   |- hold-oplock : FAIL
    |
    |- notify
-   |   |- tcon 
-   |   |- dir
-   |   |- mask
-   |   |- recursive
-   |   |- mask_change
-   |   |- file
-   |   |- tdis
-   |   |- exit
-   |   |- ulogoff
-   |   |- tcp_dis
-   |   |- double
-   |   |- tree
-   |   |- overflow
-   |   |- basedir
-   |   |- alignement
+   |   |- tcon : FAIL 
+   |   |- dir : FAIL
+   |   |- mask : FAIL
+   |   |- recursive : FAIL
+   |   |- mask_change : FAIL
+   |   |- file : FAIL
+   |   |- tdis : FAIL
+   |   |- exit : FAIL
+   |   |- ulogoff : FAIL
+   |   |- tcp_dis : FAIL
+   |   |- double : FAIL
+   |   |- tree : FAIL
+   |   |- overflow : FAIL
+   |   |- basedir : FAIL
+   |   |- alignement : FAIL
    |
-   |- mux 
-   |- ioctl
-   |- chkpath
+   |- mux : FAIL
+   |- ioctl : FAIL
+   |- chkpath : FAIL
    |- unlink
-   |   |- unlink 
-   |   |- delete_on_close
-   |   |- unlink-defer
+   |   |- unlink : FAIL
+   |   |- delete_on_close : FAIL
+   |   |- unlink-defer : PASS
    |
    |- read
-   |   |- read
-   |   |- readx
-   |   |- lockread 
-   |   |- readbraw
-   |   |- read for execute
+   |   |- read : FAIL
+   |   |- readx : FAIL
+   |   |- lockread : FAIL
+   |   |- readbraw : FAIL
+   |   |- read for execute : FAIL
    |
    |- write 
-   |   |- write
-   |   |- write unlock
-   |   |- write close
-   |   |- writex
+   |   |- write : FAIL
+   |   |- write unlock : FAIL
+   |   |- write close : FAIL
+   |   |- writex : FAIL
    |
    |- lock 
-   |   |- lockx
-   |   |- lock
-   |   |- pidhigh 
-   |   |- async
-   |   |- errorcode 
-   |   |- changetype
-   |   |- stacking
-   |   |- unlock
-   |   |- multiple_unlock
-   |   |- zerobytelocks 
-   |   |- zerobyteread
-   |   |- multilock
-   |   |- multilock2
+   |   |- lockx : FAIL
+   |   |- lock : FAIL
+   |   |- pidhigh : FAIL 
+   |   |- async : FAIL
+   |   |- errorcode : FAIL 
+   |   |- changetype : FAIL
+   |   |- stacking : FAIL
+   |   |- unlock : FAIL
+   |   |- multiple_unlock : FAIL
+   |   |- zerobytelocks : FAIL 
+   |   |- zerobyteread : FAIL
+   |   |- multilock : FAIL
+   |   |- multilock2 : FAIL
    |
    |- context 
-   |   |- session1
-   |   |- tree
-   |   |- tree_ulogoff
-   |   |- pid_only_sess
-   |   |- pid_2sess
-   |   |- pid_2tcon
+   |   |- session1 : FAIL
+   |   |- tree : FAIL
+   |   |- tree_ulogoff : FAIL
+   |   |- pid_only_sess : FAIL
+   |   |- pid_2sess : FAIL
+   |   |- pid_2tcon : FAIL
    |
    |- session
-   |   |- reauth1 
-   |   |- reauth2
-   |   |- expire1
+   |   |- reauth1 : PASS 
+   |   |- reauth2 : FAIL
+   |   |- expire1 : FAIL
    |
    |- rename
-   |   |- mv
-   |   |- trans2rename
-   |   |- nttransrename
-   |   |- ntrename
-   |   |- osxrename
-   |   |- directory rename
+   |   |- mv : FAIL
+   |   |- trans2rename : FAIL
+   |   |- nttransrename : FAIL
+   |   |- ntrename : FAIL
+   |   |- osxrename : FAIL
+   |   |- directory rename : FAIL
    |
-   |- seek
-   |- eas
+   |- seek : FAIL
+   |- eas : FAIL
    |
    |- streams
-   |   |- dir
-   |   |- io
-   |   |- sharemodes
-   |   |- delete
-   |   |- names
-   |   |- names2
-   |   |- rename 
-   |   |- rename2 
-   |   |- rename3
-   |   |- createdisp
-   |   |- attr
-   |   |- sumtab
-   |   |- perms
+   |   |- dir : FAIL
+   |   |- io : FAIL
+   |   |- sharemodes : FAIL
+   |   |- delete : FAIL
+   |   |- names : FAIL
+   |   |- names2 : FAIL
+   |   |- rename : FAIL 
+   |   |- rename2 : FAIL 
+   |   |- rename3 : FAIL
+   |   |- createdisp : FAIL
+   |   |- attr : FAIL
+   |   |- sumtab : FAIL
+   |   |- perms : FAIL
    |
    |- acls
-   |   |- sd 
-   |   |- create_file
-   |   |- create_dir
-   |   |- nulldacl
-   |   |- creator
-   |   |- generic
-   |   |- owner
-   |   |- inheritance
-   |   |- INHERITFLAGS
-   |   |- dynamic
+   |   |- sd : FAIL
+   |   |- create_file : FAIL
+   |   |- create_dir : FAIL
+   |   |- nulldacl : FAIL
+   |   |- creator : FAIL
+   |   |- generic : FAIL
+   |   |- owner : FAIL
+   |   |- inheritance : FAIL
+   |   |- INHERITFLAGS : FAIL
+   |   |- dynamic : FAIL
    |
    |- composite 
-   |   |- fetchfile
-   |   |- loadfile
-   |   |- appendacl
-   |   |- fsinfo
+   |   |- fetchfile : PASS
+   |   |- loadfile : FAIL
+   |   |- appendacl : FAIL
+   |   |- fsinfo : FAIL
    |
-   |- samba3hide
-   |- samba3oplocklogoff
-   |- samba3badnameblob 
-   |- samba3badpath
-   |- samba3caseinsensitive
-   |- samba3posixtimedlock
-   |- scan-eamax
+   |- samba3hide : FAIL
+   |- samba3oplocklogoff : FAIL
+   |- samba3badnameblob : FAIL
+   |- samba3badpath : FAIL
+   |- samba3caseinsensitive : FAIL
+   |- samba3posixtimedlock : FAIL
+   |- scan-eamax : FAIL
  
-* auth
+* local
    |- ntlmssp
-   |   |- NTLMSSP self check
+   |   |- NTLMSSP self check : PASS
    |
    |- pac
-   |   |- self check 
-   |   |- saved check
+   |   |- self check : PASS
+   |   |- saved check : PASS
    | 
    |- smbencrypt
-   |   |- deshash check
+   |   |- deshash check : PASS
 
 * smb2
-   |- connect :
+   |- connect : FAIL(crash)
    |
    |- scan
-   |   |- scan
-   |   |- getinfo
-   |   |- setinfo
-   |   |- find
+   |   |- scan : FAIL
+   |   |- getinfo : FAIL
+   |   |- setinfo : FAIL
+   |   |- find : PASS
    |
    |- getinfo
-   |   |- complex
-   |   |- fsinfo
-   |   |- qfs_buffercheck
-   |   |- qfile_buffercheck
-   |   |- qsec_buffercheck
+   |   |- complex : FAIL
+   |   |- fsinfo : FAIL
+   |   |- qfs_buffercheck : FAIL
+   |   |- qfile_buffercheck : FAIL
+   |   |- qsec_buffercheck : FAIL
    |
-   |- setinfo :
+   |- setinfo : FAIL
    |
    |- lock
-   |   |- valid-request : PASS
-   |   |- rw-none
-   |   |- rw-shared
-   |   |- rw-exclusive
-   |   |- auto-unlock
-   |   |- lock
-   |   |- async
-   |   |- cancel
-   |   |- cancel-tdis
-   |   |- cancel-logoff
-   |   |- errorcode
-   |   |- zerobytelength
-   |   |- zerobyteread
-   |   |- unlock
-   |   |- multiple-unlock
-   |   |- stacking
-   |   |- contend
-   |   |- context
-   |   |- range
-   |   |- overlap
-   |   |- truncate
-   |   |- reply
+   |   |- valid-request : FAIL
+   |   |- rw-none : PASS
+   |   |- rw-shared : FAIL
+   |   |- rw-exclusive : PASS
+   |   |- auto-unlock : FAIL
+   |   |- lock : FAIL
+   |   |- async : FAIL
+   |   |- cancel : FAIL
+   |   |- cancel-tdis : FAIL
+   |   |- cancel-logoff : FAIL
+   |   |- errorcode : FAIL
+   |   |- zerobytelength : FAIL
+   |   |- zerobyteread : FAIL
+   |   |- unlock : FAIL
+   |   |- multiple-unlock : FAIL
+   |   |- stacking : FAIL
+   |   |- contend : PASS
+   |   |- context : FAIL
+   |   |- range : FAIL(crash)
+   |   |- overlap : FAIL
+   |   |- truncate : PASS
+   |   |- reply : FAIL
    |
    |- read
-   |   |- eof
-   |   |- position
-   |   |- dir
+   |   |- eof : PASS
+   |   |- position : FAIL
+   |   |- dir : FAIL
    |
    |- create
-   |   |- gentest
-   |   |- blob
-   |   |- open
-   |   |- brlocked
-   |   |- multi
-   |   |- delete
-   |   |- leading-slash
-   |   |- impersonation
-   |   |- acfile
-   |   |- nulldacl
-   |   |- mkdir-dup
-   |   |- dir-alloc-size
+   |   |- gentest : FAIL
+   |   |- blob : FAIL
+   |   |- open : FAIL
+   |   |- brlocked : PASS
+   |   |- multi : FAIL
+   |   |- delete : FAIL
+   |   |- leading-slash : FAIL
+   |   |- impersonation : FAIL
+   |   |- acfile : FAIL
+   |   |- nulldacl : FAIL
+   |   |- mkdir-dup : PASS
+   |   |- dir-alloc-size : PASS
    |
    |- acls
-   |   |- CREATOR
-   |   |- GENERIC
-   |   |- OWNER
-   |   |- INHERITANCE
-   |   |- INHERITFLAGS
-   |   |- DYNAMIC
-   |   |- ACCESSBASED
+   |   |- CREATOR : FAIL
+   |   |- GENERIC : FAIL
+   |   |- OWNER : FAIL
+   |   |- INHERITANCE : FAIL
+   |   |- INHERITFLAGS : FAIL
+   |   |- DYNAMIC : FAIL
+   |   |- ACCESSBASED : FAIL
    |
    |- compound
-   |   |- related1
-   |   |- related2
-   |   |- related3
-   |   |- unrelated1
-   |   |- invalid1
-   |   |- invalid2
-   |   |- invalid3
-   |   |- interim1
-   |   |- interim2
-   |   |- compound-break
-   |   |- compound-padding
+   |   |- related1 : PASS
+   |   |- related2 : PASS
+   |   |- related3 : FAIL
+   |   |- unrelated1 : PASS
+   |   |- invalid1 : PASS
+   |   |- invalid2 : PASS
+   |   |- invalid3 : PASS
+   |   |- interim1 : FAIL
+   |   |- interim2 : PASS
+   |   |- compound-break : PASS
+   |   |- compound-padding : FAIL
    |
    |- notify
-   |   |- valid-req
-   |   |- tcon
-   |   |- dir
-   |   |- mask
-   |   |- tdis
-   |   |- tdis1
-   |   |- mask-change
-   |   |- close
-   |   |- logoff
-   |   |- session-reconnect
-   |   |- invalid-reauth
-   |   |- tree
-   |   |- basedir
-   |   |- double
-   |   |- file
-   |   |- tcp
-   |   |- rec
-   |   |- overflow
-   |   |- rmdir1
-   |   |- rmdir2
-   |   |- rmdir3
-   |   |- rmdir4
+   |   |- valid-req : FAIL
+   |   |- tcon : FAIL
+   |   |- dir : FAIL
+   |   |- mask : FAIL
+   |   |- tdis : PASS
+   |   |- tdis1 : FAIL
+   |   |- mask-change : FAIL
+   |   |- close : FAIL
+   |   |- logoff : FAIL
+   |   |- session-reconnect : FAIL
+   |   |- invalid-reauth : FAIL
+   |   |- tree : FAIL
+   |   |- basedir : FAIL
+   |   |- double : FAIL
+   |   |- file : FAIL
+   |   |- tcp : FAIL
+   |   |- rec : FAIL
+   |   |- overflow : FAIL
+   |   |- rmdir1 : FAIL
+   |   |- rmdir2 : FAIL
+   |   |- rmdir3 : FAIL
+   |   |- rmdir4 : FAIL
    |
-   |- notfiy_disabled
+   |- notfiy_disabled : FAIL
    |
    |- durable-open
-   |   |- open-oplock
-   |   |- open-lease
-   |   |- reopen1
-   |   |- reopen1a
-   |   |- reopen2
-   |   |- reopen2-lease
-   |   |- reopen2-lease-v2
-   |   |- reopen2a
-   |   |- reopen3
-   |   |- reopen4
-   |   |- delete_on_close1 
-   |   |- delete_on_close2
-   |   |- oplock
-   |   |- lease
-   |   |- lock-oplock
-   |   |- lock-lease
-   |   |- open2-lease
-   |   |- open2-oplock
-   |   |- alloc-size
-   |   |- read-only
+   |   |- open-oplock : FAIL
+   |   |- open-lease : FAIL
+   |   |- reopen1 : PASS
+   |   |- reopen1a : PASS
+   |   |- reopen2 : PASS
+   |   |- reopen2-lease : FAIL
+   |   |- reopen2-lease-v2 : FAIL
+   |   |- reopen2a : PASS
+   |   |- reopen3 : PASS
+   |   |- reopen4 : PASS
+   |   |- delete_on_close1 : FAIL
+   |   |- delete_on_close2 : FAIL
+   |   |- oplock : FAIL
+   |   |- lease : FAIL
+   |   |- lock-oplock : PASS
+   |   |- lock-lease : FAIL
+   |   |- open2-lease : FAIL
+   |   |- open2-oplock : FAIL
+   |   |- alloc-size : FAIL
+   |   |- read-only : FAIL
    |
    |- durable-open-disconnect
-   |   |- open-oplock-disconnect
+   |   |- open-oplock-disconnect : FAIL
    |
    |- durable-v2-open
-   |   |- create-blob
-   |   |- open-oplock
-   |   |- open-lease
-   |   |- reopen1
-   |   |- reopen1a
-   |   |- reopen2
-   |   |- reopen2b
-   |   |- reopen2-lease
-   |   |- reopen2-lease-v2
-   |   |- app-instance
-   |   |- persistent-open-oplock
-   |   |- persistent-open-lease
+   |   |- create-blob : FAIL
+   |   |- open-oplock : FAIL
+   |   |- open-lease : FAIL
+   |   |- reopen1 : FAIL
+   |   |- reopen1a : FAIL
+   |   |- reopen2 : FAIL
+   |   |- reopen2b : FAIL
+   |   |- reopen2-lease : FAIL
+   |   |- reopen2-lease-v2 : FAIL
+   |   |- app-instance : FAIL
+   |   |- persistent-open-oplock : FAIL
+   |   |- persistent-open-lease : FAIL
    |
    |- dir
-   |   |- find
-   |   |- fixed
-   |   |- one
-   |   |- many
-   |   |- modify
-   |   |- sorted
-   |   |- file-index
-   |   |- large-files
+   |   |- find : PASS
+   |   |- fixed : PASS
+   |   |- one : FAIL
+   |   |- many : PASS
+   |   |- modify : FAIL
+   |   |- sorted : PASS
+   |   |- file-index : PASS
+   |   |- large-files : PASS
    |
    |- lease
-   |   |- request
-   |   |- break_twice
-   |   |- nobreakself
-   |   |- statopen
-   |   |- upgrade
-   |   |- upgrade2
-   |   |- upgrade3
-   |   |- break
-   |   |- oplock
-   |   |- multibreak
-   |   |- breaking1
-   |   |- breaking2
-   |   |- breaking3
-   |   |- v2_breaking3
-   |   |- breaking4
-   |   |- breaking5
-   |   |- breaking6
-   |   |- lock1
-   |   |- complex1
-   |   |- v2_request_parent
-   |   |- v2_request
-   |   |- v2_epoch1
-   |   |- v2_epoch2
-   |   |- v2_epoch3
-   |   |- v2_complex1
-   |   |- v2_complex2
-   |   |- v2_rename
-   |   |- dynamic_share
-   |   |- timeout
+   |   |- request : FAIL
+   |   |- break_twice : FAIL(skip)
+   |   |- nobreakself : FAIL
+   |   |- statopen : FAIL
+   |   |- upgrade : FAIL
+   |   |- upgrade2 : FAIL
+   |   |- upgrade3 : FAIL
+   |   |- break : FAIL
+   |   |- oplock : FAIL
+   |   |- multibreak : FAIL
+   |   |- breaking1 : FAIL
+   |   |- breaking2 : FAIL
+   |   |- breaking3 : FAIL
+   |   |- v2_breaking3 : FAIL(skip)
+   |   |- breaking4 : FAIL
+   |   |- breaking5 : FAIL
+   |   |- breaking6 : FAIL
+   |   |- lock1 : FAIL
+   |   |- complex1 : FAIL
+   |   |- v2_request_parent : FAIL(skip)
+   |   |- v2_request : FAIL(skip)
+   |   |- v2_epoch1 : FAIL(skip)
+   |   |- v2_epoch2 : FAIL(skip)
+   |   |- v2_epoch3 : FAIL(skip)
+   |   |- v2_complex1 : FAIL(skip)
+   |   |- v2_complex2 : FAIL(skip)
+   |   |- v2_rename : FAIL(skip)
+   |   |- dynamic_share : FAIL(skip)
+   |   |- timeout : FAIL
    |
    |- compound
-   |   |- related1
-   |   |- related2
-   |   |- related3
-   |   |- unrelated1
-   |   |- invalid1
-   |   |- invalid2
-   |   |- invalid3
-   |   |- interim1
-   |   |- interim2
-   |   |- compound-break
-   |   |- compound-padding
+   |   |- related1 : PASS
+   |   |- related2 : PASS
+   |   |- related3 : FAIL
+   |   |- unrelated1 : PASS
+   |   |- invalid1 : PASS
+   |   |- invalid2 : PASS
+   |   |- invalid3 : PASS
+   |   |- interim1 : FAIL
+   |   |- interim2 : PASS
+   |   |- compound-break : PASS
+   |   |- compound-padding : FAIL
    |
    |- oplock
-   |   |- exclusive1
-   |   |- exclusive2
-   |   |- exclusive3
-   |   |- exclusive4
-   |   |- exclusive5
-   |   |- exclusive6
-   |   |- exclusive9
-   |   |- batch1
-   |   |- batch2
-   |   |- batch3
-   |   |- batch4
-   |   |- batch5
-   |   |- batch6
-   |   |- batch7
-   |   |- batch8
-   |   |- batch9
-   |   |- batch9a
-   |   |- batch10
-   |   |- batch11
-   |   |- batch12
-   |   |- batch13
-   |   |- batch14
-   |   |- batch15
-   |   |- batch16
-   |   |- batch19
-   |   |- batch20
-   |   |- batch21
-   |   |- batch22
-   |   |- batch23
-   |   |- batch24
-   |   |- batch25
-   |   |- batch26
-   |   |- stream1
-   |   |- doc
-   |   |- brl1
-   |   |- brl2
-   |   |- brl3
-   |   |- levelii500 
-   |   |- levelii501
+   |   |- exclusive1 : FAIL
+   |   |- exclusive2 : PASS
+   |   |- exclusive3 : FAIL
+   |   |- exclusive4 : PASS
+   |   |- exclusive5 : FAIL
+   |   |- exclusive6 : FAIL
+   |   |- exclusive9 : PASS
+   |   |- batch1 : FAIL
+   |   |- batch2 : FAIL
+   |   |- batch3 : FAIL
+   |   |- batch4 : PASS
+   |   |- batch5 : FAIL
+   |   |- batch6 : PASS
+   |   |- batch7 : FAIL
+   |   |- batch8 : PASS
+   |   |- batch9 : PASS
+   |   |- batch9a : PASS
+   |   |- batch10 : FAIL
+   |   |- batch11 : FAIL
+   |   |- batch12 : FAIL
+   |   |- batch13 : FAIL
+   |   |- batch14 : FAIL
+   |   |- batch15 : PASS
+   |   |- batch16 : FAIL
+   |   |- batch19 : FAIL
+   |   |- batch20 : FAIL
+   |   |- batch21 : PASS
+   |   |- batch22 : PASS
+   |   |- batch23 : PASS
+   |   |- batch24 : PASS
+   |   |- batch25 : FAIL
+   |   |- batch26 : FAIL
+   |   |- stream1 : FAIL
+   |   |- doc : FAIL
+   |   |- brl1 : FAIL
+   |   |- brl2 : FAIL
+   |   |- brl3 : FAIL
+   |   |- levelii500 : FAIL
+   |   |- levelii501 : PASS
    |
    |- stream
-   |   |- dir
-   |   |- io
-   |   |- sharemodes
-   |   |- names
-   |   |- name2
-   |   |- rename
-   |   |- rename2
-   |   |- create-disposition 
-   |   |- attributes
-   |   |- delete
-   |   |- zero-byte
+   |   |- dir : FAIL
+   |   |- io : FAIL
+   |   |- sharemodes : FAIL
+   |   |- names : FAIL
+   |   |- name2 : FAIL
+   |   |- rename : FAIL
+   |   |- rename2 : FAIL
+   |   |- create-disposition : FAIL 
+   |   |- attributes : FAIL
+   |   |- delete : FAIL
+   |   |- zero-byte : FAIL
    |
    |- ioctl
-   |   |- shadow_copy 
-   |   |- req_resume_key
-   |   |- copy_chunk_simple
-   |   |- copy_chunk_multi
-   |   |- copy_chunk_tiny
-   |   |- copy_chunk_overwrite
-   |   |- copy_chunk_append
-   |   |- copy_chunk_limits
-   |   |- copy_chunk_src_lock
-   |   |- copy_chunk_dest_lock
-   |   |- copy_chunk_bad_key
-   |   |- copy_chunk_src_is_dest 
-   |   |- copy_chunk_src_is_dest_overlap
-   |   |- copy_chunk_bad_access
-   |   |- copy_chunk_write_access
-   |   |- copy_chunk_src_exceed
-   |   |- copy_chunk_src_exceed_multi
-   |   |- copy_chunk_sparse_dest 
-   |   |- copy_chunk_max_output_sz
-   |   |- copy_chunk_zero_length
-   |   |- compress_file_flag
-   |   |- compress_dir_inherit
-   |   |- compress_invalid_format
-   |   |- compress_invalid_buf
-   |   |- compress_query_file_attr
-   |   |- compress_create_with_attr
-   |   |- compress_inherit_disable
-   |   |- compress_set_file_attr
-   |   |- compress_perms 
-   |   |- network_interface_info
-   |   |- sparse_file_flag
-   |   |- sparse_file_attr
-   |   |- sparse_dir_flag
-   |   |- sparse_set_nobuf
-   |   |- sparse_set_oversize
-   |   |- sparse_qar
-   |   |- sparse_qar_malformed
-   |   |- sparse_punch
-   |   |- sparse_hole_dealloc
-   |   |- sparse_compressed 
-   |   |- sparse_copy_chunk
-   |   |- sparse_punch_invalid
-   |   |- sparse_perms
-   |   |- sparse_lock
-   |   |- sparse_qar_ob1
-   |   |- sparse_qar_multi
-   |   |- sparse_qar_overflow
-   |   |- trim_simple
+   |   |- shadow_copy : FAIL(SKIP)
+   |   |- req_resume_key : FAIL
+   |   |- copy_chunk_simple : FAIL
+   |   |- copy_chunk_multi : FAIL
+   |   |- copy_chunk_tiny : FAIL
+   |   |- copy_chunk_overwrite : FAIL
+   |   |- copy_chunk_append : FAIL
+   |   |- copy_chunk_limits : FAIL
+   |   |- copy_chunk_src_lock : FAIL
+   |   |- copy_chunk_dest_lock : FAIL
+   |   |- copy_chunk_bad_key : FAIL
+   |   |- copy_chunk_src_is_dest : FAIL
+   |   |- copy_chunk_src_is_dest_overlap : FAIL
+   |   |- copy_chunk_bad_access : FAIL
+   |   |- copy_chunk_write_access : FAIL
+   |   |- copy_chunk_src_exceed : FAIL
+   |   |- copy_chunk_src_exceed_multi : FAIL
+   |   |- copy_chunk_sparse_dest : FAIL
+   |   |- copy_chunk_max_output_sz : FAIL
+   |   |- copy_chunk_zero_length : FAIL
+   |   |- compress_file_flag : FAIL(skip)
+   |   |- compress_dir_inherit : FAIL(skip)
+   |   |- compress_invalid_format : FAIL(skip)
+   |   |- compress_invalid_buf : FAIL(skip)
+   |   |- compress_query_file_attr : FAIL(skip)
+   |   |- compress_create_with_attr : FAIL(skip)
+   |   |- compress_inherit_disable : FAIL(skip)
+   |   |- compress_set_file_attr : FAIL(skip)
+   |   |- compress_perms : FAIL(skip)
+   |   |- network_interface_info : FAIL
+   |   |- sparse_file_flag : FAIL(skip)
+   |   |- sparse_file_attr : FAIL(skip)
+   |   |- sparse_dir_flag : FAIL(skip)
+   |   |- sparse_set_nobuf : FAIL(skip)
+   |   |- sparse_set_oversize : FAIL(skip)
+   |   |- sparse_qar : FAIL(skip)
+   |   |- sparse_qar_malformed : FAIL(skip)
+   |   |- sparse_punch : FAIL(skip)
+   |   |- sparse_hole_dealloc : FAIL(skip)
+   |   |- sparse_compressed : FAIL(skip)
+   |   |- sparse_copy_chunk : FAIL(skip)
+   |   |- sparse_punch_invalid : FAIL(skip)
+   |   |- sparse_perms : FAIL(skip)
+   |   |- sparse_lock : FAIL(skip)
+   |   |- sparse_qar_ob1 : FAIL(skip)
+   |   |- sparse_qar_multi : FAIL(skip)
+   |   |- sparse_qar_overflow : FAIL(skip)
+   |   |- trim_simple : FAIL
    |
    |- rename
-   |   |- simple
-   |   |- simple_nodelete
-   |   |- no_sharing
-   |   |- share_delete_and_delete_access
-   |   |- no_share_delete_but_delete_access
-   |   |- share_delete_no_delete_access
-   |   |- no_share_delete_no_delete_access
-   |   |- msword
-   |   |- rename_dir_openfile
-   |   |- rename_dir_bench
+   |   |- simple : PASS
+   |   |- simple_nodelete : FAIL
+   |   |- no_sharing : PASS
+   |   |- share_delete_and_delete_access : FAIL
+   |   |- no_share_delete_but_delete_access : FAIL
+   |   |- share_delete_no_delete_access : PASS
+   |   |- no_share_delete_no_delete_access : FAIL
+   |   |- msword : PASS
+   |   |- rename_dir_openfile : FAIL
+   |   |- rename_dir_bench : PASS
    |
-   |- bench-oplock :
+   |- bench-oplock : PASS
    |
-   |- hold-oplock :
+   |- hold-oplock : PASS
    |
    |- session
-   |   |- reconnect1 
-   |   |- reconnect2
-   |   |- reauth1
-   |   |- reauth2
-   |   |- reauth3
-   |   |- reauth4
-   |   |- reauth5
-   |   |- reauth6
-   |   |- expire1
-   |   |- bind1
+   |   |- reconnect1 : FAIL
+   |   |- reconnect2 : FAIL
+   |   |- reauth1 : FAIL
+   |   |- reauth2 : FAIL
+   |   |- reauth3 : FAIL
+   |   |- reauth4 : FAIL
+   |   |- reauth5 : FAIL
+   |   |- reauth6 : FAIL
+   |   |- expire1 : FAIL(skip)
+   |   |- bind1 : FAIL
    |
    |- reply
-   |   |- replay-commands
-   |   |- replay-regular 
-   |   |- replay-dhv2-oplock1
-   |   |- replay-dhv2-oplock2
-   |   |- replay-dhv2-oplock3
-   |   |- replay-dhv2-oplock-lease
-   |   |- replay-dhv2-lease1
-   |   |- replay-dhv2-lease2
-   |   |- replay-dhv2-lease3
-   |   |- replay-dhv2-oplock-oplock
-   |   |- replay3
-   |   |- replay4
-   |   |- replay5
+   |   |- replay-commands : FAIL
+   |   |- replay-regular  : FAIL
+   |   |- replay-dhv2-oplock1 : FAIL
+   |   |- replay-dhv2-oplock2 : FAIL
+   |   |- replay-dhv2-oplock3 : FAIL
+   |   |- replay-dhv2-oplock-lease : FAIL
+   |   |- replay-dhv2-lease1 : FAIL
+   |   |- replay-dhv2-lease2 : FAIL
+   |   |- replay-dhv2-lease3 : FAIL
+   |   |- replay-dhv2-oplock-oplock : FAIL
+   |   |- replay3 : FAIL
+   |   |- replay4 : FAIL
+   |   |- replay5 : FAIL
    |
-   |- delete-on-close
-       |- OVERWRITE_IF
-       |- OVERWRITE_IF Existing
-       |- CREATE
-       |- CREATE Existing
-       |- CREATE_IF
-       |- CREATE_IF Existing
+   |- delete-on-close-perms
+       |- OVERWRITE_IF : FAIL
+       |- OVERWRITE_IF Existing : FAIL
+       |- CREATE : FAIL
+       |- CREATE Existing : FAIL
+       |- CREATE_IF : FAIL
+       |- CREATE_IF Existing : FAIL
