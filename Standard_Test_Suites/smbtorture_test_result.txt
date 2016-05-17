@@ -2,7 +2,7 @@
  * SMB TORTURE TEST RESULT
 ================================================================================
 
-* Current PASS Count / TOTAL Testcase Count : 97/608
+* Current PASS Count / TOTAL Testcase Count : 88/596
 
 * base
    |- fdpass : PASS
@@ -551,19 +551,6 @@
    |   |- v2_rename : FAIL(skip)
    |   |- dynamic_share : FAIL(skip)
    |   |- timeout : FAIL
-   |
-   |- compound
-   |   |- related1 : PASS
-   |   |- related2 : PASS
-   |   |- related3 : FAIL
-   |   |- unrelated1 : PASS
-   |   |- invalid1 : PASS
-   |   |- invalid2 : PASS
-   |   |- invalid3 : PASS
-   |   |- interim1 : FAIL
-   |   |- interim2 : PASS
-   |   |- compound-break : PASS
-   |   |- compound-padding : FAIL
    |
    |- oplock
    |   |- exclusive1 : FAIL
