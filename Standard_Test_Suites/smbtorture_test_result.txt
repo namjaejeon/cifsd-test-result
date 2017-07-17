@@ -160,76 +160,76 @@
    |   |- file-index : FAIL
    |   |- large-files : PASS
    |
-   |- lease (0/29)
-   |   |- request : FAIL
-   |   |- break_twice : FAIL
-   |   |- nobreakself : FAIL
-   |   |- statopen : FAIL
-   |   |- upgrade : FAIL
-   |   |- upgrade2 : FAIL
-   |   |- upgrade3 : FAIL
-   |   |- break : FAIL
-   |   |- oplock : FAIL
-   |   |- multibreak : FAIL
+   |- lease (12/18)
+   |   |- request : PASS
+   |   |- break_twice : NOT SUPPORT(v2 lease)
+   |   |- nobreakself : PASS
+   |   |- statopen : PASS
+   |   |- upgrade : PASS
+   |   |- upgrade2 : PASS
+   |   |- upgrade3 : PASS
+   |   |- break : PASS
+   |   |- oplock : PASS
+   |   |- multibreak : PASS
    |   |- breaking1 : FAIL
    |   |- breaking2 : FAIL
    |   |- breaking3 : FAIL
-   |   |- v2_breaking3 : FAIL
+   |   |- v2_breaking3 : NOT SUPPORT(v2 lease)
    |   |- breaking4 : FAIL
    |   |- breaking5 : FAIL
    |   |- breaking6 : FAIL
-   |   |- lock1 : FAIL
-   |   |- complex1 : FAIL
-   |   |- v2_request_parent : FAIL
-   |   |- v2_request : FAIL
-   |   |- v2_epoch1 : FAIL
-   |   |- v2_epoch2 : FAIL
-   |   |- v2_epoch3 : FAIL
-   |   |- v2_complex1 : FAIL
-   |   |- v2_complex2 : FAIL
-   |   |- v2_rename : FAIL
-   |   |- dynamic_share : FAIL
-   |   |- timeout : FAIL
+   |   |- lock1 : PASS
+   |   |- complex1 : PASS
+   |   |- v2_request_parent : NOT SUPPORT(v2 lease)
+   |   |- v2_request : NOT SUPPORT(v2 lease)
+   |   |- v2_epoch1 : NOT SUPPORT(v2 lease)
+   |   |- v2_epoch2 : NOT SUPPORT(v2 lease)
+   |   |- v2_epoch3 : NOT SUPPORT(v2 lease)
+   |   |- v2_complex1 : NOT SUPPORT(v2 lease)
+   |   |- v2_complex2 : NOT SUPPORT(v2 lease)
+   |   |- v2_rename : NOT SUPPORT(v2 lease)
+   |   |- dynamic_share : NOT SUPPORT
+   |   |- timeout : PASS
    |
-   |- oplock (14/39)
+   |- oplock (37/39)
    |   |- exclusive1 : PASS
    |   |- exclusive2 : PASS
    |   |- exclusive3 : PASS
-   |   |- exclusive4 : FAIL
-   |   |- exclusive5 : FAIL
+   |   |- exclusive4 : PASS
+   |   |- exclusive5 : PASS
    |   |- exclusive6 : PASS
    |   |- exclusive9 : PASS
-   |   |- batch1 : FAIL
-   |   |- batch2 : FAIL
-   |   |- batch3 : FAIL
+   |   |- batch1 : PASS
+   |   |- batch2 : PASS
+   |   |- batch3 : PASS
    |   |- batch4 : PASS
-   |   |- batch5 : FAIL
+   |   |- batch5 : PASS
    |   |- batch6 : PASS
-   |   |- batch7 : FAIL
-   |   |- batch8 : FAIL
-   |   |- batch9 : FAIL
-   |   |- batch9a : FAIL
-   |   |- batch10 : FAIL
-   |   |- batch11 : FAIL
-   |   |- batch12 : FAIL
-   |   |- batch13 : FAIL
-   |   |- batch14 : FAIL
+   |   |- batch7 : PASS
+   |   |- batch8 : PASS
+   |   |- batch9 : PASS
+   |   |- batch9a : PASS
+   |   |- batch10 : PASS
+   |   |- batch11 : PASS
+   |   |- batch12 : PASS
+   |   |- batch13 : PASS
+   |   |- batch14 : PASS
    |   |- batch15 : PASS
-   |   |- batch16 : FAIL
-   |   |- batch19 : FAIL
-   |   |- batch20 : FAIL
+   |   |- batch16 : PASS
+   |   |- batch19 : PASS
+   |   |- batch20 : PASS
    |   |- batch21 : PASS
    |   |- batch22 : PASS
    |   |- batch23 : PASS
    |   |- batch24 : PASS
-   |   |- batch25 : FAIL
-   |   |- batch26 : FAIL
+   |   |- batch25 : PASS
+   |   |- batch26 : PASS
    |   |- stream1 : FAIL
-   |   |- doc : FAIL
-   |   |- brl1 : FAIL
-   |   |- brl2 : PASS
-   |   |- brl3 : FAIL
-   |   |- levelii500 : FAIL
+   |   |- doc : PASS
+   |   |- brl1 : PASS
+   |   |- brl2 : FAIL
+   |   |- brl3 : PASS
+   |   |- levelii500 : PASS
    |   |- levelii501 : PASS
    |
    |- stream (6/11)
