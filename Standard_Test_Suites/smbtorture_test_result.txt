@@ -2,7 +2,7 @@
  * SMB TORTURE TEST RESULT
 ================================================================================
 
-* smb2(Total : 308, PASS : 75, FAIL : 233)
+* smb2(Total : 214, PASS : 141, FAIL : 73)
    |- connect : PASS (1/1)
    |
    |- scan (4/4)
@@ -11,22 +11,22 @@
    |   |- setinfo : PASS
    |   |- find : PASS
    |
-   |- getinfo (0/5)
-   |   |- complex : FAIL
-   |   |- fsinfo : FAIL
-   |   |- qfs_buffercheck : FAIL
-   |   |- qfile_buffercheck : FAIL
+   |- getinfo (4/5)
+   |   |- complex : PASS
+   |   |- fsinfo : PASS
+   |   |- qfs_buffercheck : PASS
+   |   |- qfile_buffercheck : PASS
    |   |- qsec_buffercheck : FAIL
    |
-   |- setinfo : FAIL (0/1)
+   |- setinfo : PASS (1/1, w/o sec desc)
    |
-   |- lock (14/22)
+   |- lock (19/22)
    |   |- valid-request : PASS
    |   |- rw-none : PASS
    |   |- rw-shared : PASS
    |   |- rw-exclusive : PASS
    |   |- auto-unlock : PASS
-   |   |- lock : PASS
+   |   |- lock : FAIL
    |   |- async : PASS
    |   |- cancel : PASS
    |   |- cancel-tdis : PASS
@@ -35,14 +35,14 @@
    |   |- zerobytelength : PASS
    |   |- zerobyteread : PASS
    |   |- unlock : PASS
-   |   |- multiple-unlock : FAIL
-   |   |- stacking : FAIL
-   |   |- contend : FAIL
-   |   |- context : FAIL
+   |   |- multiple-unlock : PASS
+   |   |- stacking : PASS
+   |   |- contend : PASS
+   |   |- context : PASS
    |   |- range : FAIL
-   |   |- overlap : FAIL
-   |   |- truncate : FAIL
-   |   |- reply : FAIL
+   |   |- overlap : PASS
+   |   |- truncate : PASS
+   |   |- replay : FAIL
    |
    |- read (3/3)
    |   |- eof : PASS
@@ -109,7 +109,7 @@
    |   |- rmdir3 : FAIL
    |   |- rmdir4 : FAIL
    |
-   |- notfiy_disabled : FAIL (0/1)
+   |- change_notify_disabled.notfiy_disabled : FAIL (0/1)
    |
    |- durable-open (0/20)
    |   |- open-oplock : FAIL
@@ -136,7 +136,7 @@
    |- durable-open-disconnect (0/1)
    |   |- open-oplock-disconnect : FAIL
    |
-   |- durable-v2-open (0/12)
+   |- durable-v2-open (Not Support, 0/12)
    |   |- create-blob : FAIL
    |   |- open-oplock : FAIL
    |   |- open-lease : FAIL
@@ -150,17 +150,17 @@
    |   |- persistent-open-oplock : FAIL
    |   |- persistent-open-lease : FAIL
    |
-   |- dir (5/8)
+   |- dir (8/8)
    |   |- find : PASS
    |   |- fixed : PASS
-   |   |- one : FAIL
+   |   |- one : PASS
    |   |- many : PASS
-   |   |- modify : FAIL
+   |   |- modify : PASS
    |   |- sorted : PASS
-   |   |- file-index : FAIL
+   |   |- file-index : PASS
    |   |- large-files : PASS
    |
-   |- lease (12/18)
+   |- lease (17/18)
    |   |- request : PASS
    |   |- break_twice : NOT SUPPORT(v2 lease)
    |   |- nobreakself : PASS
@@ -171,13 +171,13 @@
    |   |- break : PASS
    |   |- oplock : PASS
    |   |- multibreak : PASS
-   |   |- breaking1 : FAIL
-   |   |- breaking2 : FAIL
-   |   |- breaking3 : FAIL
+   |   |- breaking1 : PASS
+   |   |- breaking2 : PASS
+   |   |- breaking3 : PASS
    |   |- v2_breaking3 : NOT SUPPORT(v2 lease)
-   |   |- breaking4 : FAIL
-   |   |- breaking5 : FAIL
-   |   |- breaking6 : FAIL
+   |   |- breaking4 : PASS
+   |   |- breaking5 : PASS
+   |   |- breaking6 : PASS
    |   |- lock1 : PASS
    |   |- complex1 : PASS
    |   |- v2_request_parent : NOT SUPPORT(v2 lease)
@@ -189,7 +189,7 @@
    |   |- v2_complex2 : NOT SUPPORT(v2 lease)
    |   |- v2_rename : NOT SUPPORT(v2 lease)
    |   |- dynamic_share : NOT SUPPORT
-   |   |- timeout : PASS
+   |   |- timeout : FAIL
    |
    |- oplock (37/39)
    |   |- exclusive1 : PASS
@@ -232,20 +232,20 @@
    |   |- levelii500 : PASS
    |   |- levelii501 : PASS
    |
-   |- stream (6/11)
+   |- stream (11/11)
    |   |- dir : PASS
    |   |- io : PASS
    |   |- sharemodes : PASS
-   |   |- names : FAIL
+   |   |- names : PASS
    |   |- names2 : PASS
-   |   |- rename : FAIL
-   |   |- rename2 : FAIL
+   |   |- rename : PASS
+   |   |- rename2 : PASS
    |   |- create-disposition : PASS
-   |   |- attributes : FAIL
+   |   |- attributes : PASS
    |   |- delete : PASS
-   |   |- zero-byte : FAIL
+   |   |- zero-byte : PASS
    |
-   |- ioctl (0/59)
+   |- ioctl (Not Support, 1/59)
    |   |- shadow_copy : FAIL
    |   |- req_resume_key : FAIL
    |   |- copy_chunk_simple : FAIL
@@ -275,7 +275,7 @@
    |   |- compress_inherit_disable : FAIL
    |   |- compress_set_file_attr : FAIL
    |   |- compress_perms : FAIL
-   |   |- network_interface_info : FAIL
+   |   |- network_interface_info : PASS
    |   |- sparse_file_flag : FAIL
    |   |- sparse_file_attr : FAIL
    |   |- sparse_dir_flag : FAIL
@@ -307,23 +307,23 @@
    |   |- rename_dir_openfile : PASS
    |   |- rename_dir_bench : PASS
    |
-   |- bench-oplock : FAIL (0/1)
+   |- bench-oplock : PASS (0/1)
    |
    |- hold-oplock : FAIL (0/1)
    |
-   |- session (0/10)
-   |   |- reconnect1 : FAIL
-   |   |- reconnect2 : FAIL
-   |   |- reauth1 : FAIL
-   |   |- reauth2 : FAIL
-   |   |- reauth3 : FAIL
-   |   |- reauth4 : FAIL
-   |   |- reauth5 : FAIL
+   |- session (5/8)
+   |   |- reconnect1 : PASS
+   |   |- reconnect2 : PASS
+   |   |- reauth1 : PASS
+   |   |- reauth2 : PASS
+   |   |- reauth3 : FAIL (SEC DEC SUPPORT X)
+   |   |- reauth4 : FAIL (SEC DEC SUPPORT X)
+   |   |- reauth5 : FAIL (SEC DEC SUPPORT X)
    |   |- reauth6 : PASS
-   |   |- expire1 : FAIL
-   |   |- bind1 : FAIL
+   |   |- expire1 : FAIL (Kerberos SUPPORT X)
+   |   |- bind1 : FAIL (MULTI CHANNEL SUPPORT X)
    |
-   |- reply (0/13)
+   |- reply (Not Support, 0/13)
    |   |- replay-commands : FAIL
    |   |- replay-regular  : FAIL
    |   |- replay-dhv2-oplock1 : FAIL
