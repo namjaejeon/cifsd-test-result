@@ -2,7 +2,7 @@
  * SMB TORTURE TEST RESULT
 ================================================================================
 
-* smb2(Total : 214, PASS : 141, FAIL : 73)
+* smb2(Total : 214, PASS : 172, FAIL : 42)
    |- connect : PASS (1/1)
    |
    |- scan (4/4)
@@ -111,44 +111,44 @@
    |
    |- change_notify_disabled.notfiy_disabled : FAIL (0/1)
    |
-   |- durable-open (0/20)
-   |   |- open-oplock : FAIL
-   |   |- open-lease : FAIL
-   |   |- reopen1 : FAIL
-   |   |- reopen1a : FAIL
-   |   |- reopen2 : FAIL
-   |   |- reopen2-lease : FAIL
+   |- durable-open (19/20)
+   |   |- open-oplock : PASS
+   |   |- open-lease : PASS
+   |   |- reopen1 : PASS
+   |   |- reopen1a : PASS
+   |   |- reopen2 : PASS
+   |   |- reopen2-lease : PASS
    |   |- reopen2-lease-v2 : FAIL
-   |   |- reopen2a : FAIL
-   |   |- reopen3 : FAIL
-   |   |- reopen4 : FAIL
-   |   |- delete_on_close1 : FAIL
-   |   |- delete_on_close2 : FAIL
-   |   |- oplock : FAIL
-   |   |- lease : FAIL
-   |   |- lock-oplock : FAIL
-   |   |- lock-lease : FAIL
-   |   |- open2-lease : FAIL
-   |   |- open2-oplock : FAIL
-   |   |- alloc-size : FAIL
-   |   |- read-only : FAIL
+   |   |- reopen2a : PASS
+   |   |- reopen3 : PASS
+   |   |- reopen4 : PASS
+   |   |- delete_on_close1 : PASS
+   |   |- delete_on_close2 : PASS
+   |   |- oplock : PASS
+   |   |- lease : PASS
+   |   |- lock-oplock : PASS
+   |   |- lock-lease : PASS
+   |   |- open2-lease : PASS
+   |   |- open2-oplock : PASS
+   |   |- alloc-size : PASS
+   |   |- read-only : PASS
    |
    |- durable-open-disconnect (0/1)
    |   |- open-oplock-disconnect : FAIL
    |
-   |- durable-v2-open (Not Support, 0/12)
-   |   |- create-blob : FAIL
-   |   |- open-oplock : FAIL
-   |   |- open-lease : FAIL
-   |   |- reopen1 : FAIL
-   |   |- reopen1a : FAIL
-   |   |- reopen2 : FAIL
-   |   |- reopen2b : FAIL
-   |   |- reopen2-lease : FAIL
+   |- durable-v2-open (11/12)
+   |   |- create-blob : PASS
+   |   |- open-oplock : PASS
+   |   |- open-lease : PASS
+   |   |- reopen1 : PASS
+   |   |- reopen1a : PASS
+   |   |- reopen2 : PASS
+   |   |- reopen2b : PASS
+   |   |- reopen2-lease : PASS
    |   |- reopen2-lease-v2 : FAIL
-   |   |- app-instance : FAIL
-   |   |- persistent-open-oplock : FAIL
-   |   |- persistent-open-lease : FAIL
+   |   |- app-instance : PASS
+   |   |- persistent-open-oplock : PASS
+   |   |- persistent-open-lease : PASS
    |
    |- dir (8/8)
    |   |- find : PASS
@@ -160,7 +160,7 @@
    |   |- file-index : PASS
    |   |- large-files : PASS
    |
-   |- lease (17/18)
+   |- lease (18/18)
    |   |- request : PASS
    |   |- break_twice : NOT SUPPORT(v2 lease)
    |   |- nobreakself : PASS
@@ -189,9 +189,9 @@
    |   |- v2_complex2 : NOT SUPPORT(v2 lease)
    |   |- v2_rename : NOT SUPPORT(v2 lease)
    |   |- dynamic_share : NOT SUPPORT
-   |   |- timeout : FAIL
+   |   |- timeout : PASS
    |
-   |- oplock (37/39)
+   |- oplock (38/39)
    |   |- exclusive1 : PASS
    |   |- exclusive2 : PASS
    |   |- exclusive3 : PASS
@@ -227,7 +227,7 @@
    |   |- stream1 : FAIL
    |   |- doc : PASS
    |   |- brl1 : PASS
-   |   |- brl2 : FAIL
+   |   |- brl2 : PASS
    |   |- brl3 : PASS
    |   |- levelii500 : PASS
    |   |- levelii501 : PASS
@@ -307,7 +307,7 @@
    |   |- rename_dir_openfile : PASS
    |   |- rename_dir_bench : PASS
    |
-   |- bench-oplock : PASS (0/1)
+   |- bench-oplock : PASS (1/1)
    |
    |- hold-oplock : FAIL (0/1)
    |
