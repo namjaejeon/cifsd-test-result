@@ -1,0 +1,1 @@
+ALL TC Result - TOTAL : 1216 / PASS : 15 / FAIL : 1200 / TIMEOUT : 1
