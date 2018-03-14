@@ -1,0 +1,45 @@
+
+WindowsProtocolTestSuites 3.18.3.0 : FileServer > SMB2/3							
+							
+				Total	Passed	Failed	Inconclusive	M/O	Comments
+Negotiate			107	98	9	0		M	
+Session				223	221	2	0		M	
+Replay				575	37	6	532		O	need to check settings
+Credit				53	20	33	0		M	
+Signing				97	56	41	0		M	
+Encryption			11	0	11	0		O	
+MultiChannel			8			8		x	need to check settings
+Tree				16	8	5	3		M	
+CreateClose			32	23	9	0		M	
+Oplock				341	0	290	51			need to check settings
+¦¦ OplockOnShareWithoutForceLevel2OrSOFS				M	
+¦¦ OplockOnShareWithoutForceLevel2WithSOFS							
+¦¦ OplockOnShareWithForceLevel2WithoutSOFS							
+¦¦ OplockOnShareWithForceLevel2AndSOFS							
+DirectoryLeasing		19			19		x	need to check settings
+LeaseV1				276			276		M	need to check settings
+LeaseV2				138			138		M	need to check settings
+DurableHandle			225	7	0	218		O	need to check settings
+¦¦ DurableHandleV1BatchOplock							
+¦¦ DurableHandleV1LeaseV1							
+¦¦ DurableHandleV2BatchOplock							
+¦¦ DurableHandleV2LeaseV1							
+¦¦ DurableHandleV2LeaseV2							
+¦¦ PersistentHandle							
+Compound			2	0	2	0		M	
+AppInstanceId			74			74		x	need to check settings
+AppInstanceVersion		7			7		x	need to check settings
+FSCTL/IOCTL			202	13	128	61			need to check settings
+¦¦ FsctlLmrRequestResiliency						x	
+¦¦ FsctlFileLevelTrim							x	
+¦¦ FsctlValidateNegotiateInfo						M	
+¦¦ FsctlSetGetIntegrityInformation					x	
+¦¦ FsctlOffloadReadWrite						O	
+¦¦ FsctlEnumerateSnapShots						x	
+CombinedFeature			22	0	2	20			need to check settings
+OperateOneFileFromTwoNodes	29	0	29	0		x	
+MixedOplockLease		24	24	0	0		M	completed
+ChangeNotify			21	0	21	0		O	
+LockUnlock			1	0	1	0		M	
+QueryAndSetFileInfo		1	0	1	0		M	
+				2504	507	590	1407
