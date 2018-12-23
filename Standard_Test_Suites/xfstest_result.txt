@@ -1,5 +1,5 @@
 ================================================================================
- * XFSTESTS TEST RESULT
+ * XFSTESTS TEST RESULT(2018.12.17 version)
 ================================================================================\
 
 [smb3]
@@ -8,23 +8,7 @@
  TEST_DIR=/mnt/test
  TEST_FS_MOUNT_OPTIONS='-ousername=test,noperm,vers=3.0,mfsymlinks,actimeo=0,password=testpass'
 [Test Result Summary]
- Current PASS Count / TOTAL Testcase Count : 49 / 72
-
-[smb2]
- FSTYP=cifs
- TEST_DEV=//your-server/your-share
- TEST_DIR=/mint/test
- TEST_FS_MOUNT_OPTIONS='-ousername=test,noperm,vers=2.0,mfsymlinks,actimeo=0,password=testpass'
-[Test Result Summary]
- Current PASS Count / TOTAL Testcase Count : 49 / 72
-
-[smb2.1]
- FSTYP=cifs
- TEST_DEV=//your-server/your-share
- TEST_DIR=/mnt/test
- TEST_FS_MOUNT_OPTIONS='-ousername=test,noperm,vers=2.1,mfsymlinks,actimeo=0,password=testpass'
-[Test Result Summary]
- Current PASS Count / TOTAL Testcase Count : 49 / 72
+ Current PASS Count / TOTAL Testcase Count : 72 / 86
 
 [cifs]
  FSTYP=cifs
@@ -32,7 +16,7 @@
  TEST_DIR=/mnt/test
  TEST_FS_MOUNT_OPTIONS='-ousername=test,noperm,cifacl,mfsymlinks,actimeo=0,password=testpass'
 [Test Result Summary]
- Current PASS Count / TOTAL Testcase Count : 54 / 81
+ Current PASS Count / TOTAL Testcase Count : 76 / 86
 
 
 * xfstests test detail
@@ -40,1764 +24,260 @@
       |- cifs
       |     |- 001
       |         |- [smb3] : FAIL
-      |         |- [smb2.1] : FAIL
-      |         |- [smb2] : FAIL
       |         |- [cifs] : FAIL
       |- generic
       |     |- 001
-      |     |   |- [smb3] : FAIL
-      |     |   |- [smb2.1] : FAIL
-      |     |   |- [smb2] : FAIL
+      |     |   |- [smb3] : PASS
       |     |   |- [cifs] : PASS
       |     |- 002
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 003
-      |     |   |- [smb3] : FAIL
-      |     |   |- [smb2.1] : FAIL
-      |     |   |- [smb2] : FAIL
-      |     |   |- [cifs] : FAIL
-      |     |- 004
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 005
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
+      |     |   |- [smb3] : PASS
       |     |   |- [cifs] : PASS
       |     |- 006
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
       |     |- 007
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
-      |     |   |- [cifs] : PASS
-      |     |- 008
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 009
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 010
-      |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
       |     |- 011
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 012
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 013
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
       |     |- 014
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 015
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 016
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 017
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 018
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 019
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 020
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
+      |     |   |- [smb3] : FAIL
       |     |   |- [cifs] : FAIL
-      |     |- 021
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 022
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 023
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
+      |     |   |- [smb3] : FAIL
+      |     |   |- [cifs] : PASS
       |     |- 024
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 025
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 026
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 027
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
       |     |- 028
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
       |     |- 029
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
       |     |- 030
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 031
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 032
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 033
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 034
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 035
-      |     |   |- [smb3] : FAIL
-      |     |   |- [smb2.1] : FAIL
-      |     |   |- [smb2] : FAIL
-      |     |   |- [cifs] : FAIL
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
       |     |- 036
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
       |     |- 037
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : PASS
-      |     |- 038
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 039
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 040
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 041
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 042
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 043
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 044
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 045
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 046
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 047
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 048
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 049
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 050
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 051
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 052
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 053
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 054
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 055
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 056
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 057
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 058
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 059
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 060
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 061
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 062
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
+      |     |   |- [smb3] : FAIL
       |     |   |- [cifs] : FAIL
-      |     |- 063
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 064
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 065
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 066
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 067
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : PASS
-      |     |- 068
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 069
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
       |     |- 070
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : PASS
-      |     |- 071
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 072
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 073
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
+      |     |   |- [smb3] : FAIL
+      |     |   |- [cifs] : FAIL
       |     |- 074
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
       |     |- 075
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
+      |     |   |- [smb3] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 076
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 077
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 078
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 079
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 080
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 081
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 082
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 083
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 084
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 085
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 086
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 087
-      |     |   |- [smb3] : FAIL
-      |     |   |- [smb2.1] : FAIL
-      |     |   |- [smb2] : FAIL
-      |     |   |- [cifs] : NOT RUN
-      |     |- 088
-      |     |   |- [smb3] : FAIL
-      |     |   |- [smb2.1] : FAIL
-      |     |   |- [smb2] : FAIL
-      |     |   |- [cifs] : PASS
-      |     |- 089
-      |     |   |- [smb3] : FAIL
-      |     |   |- [smb2.1] : FAIL
-      |     |   |- [smb2] : FAIL
-      |     |   |- [cifs] : FAIL
-      |     |- 090
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 091
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : FAIL
-      |     |- 092
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 093
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 094
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 095
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 096
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 097
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 098
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 099
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 100
-      |     |   |- [smb3] : FAIL
-      |     |   |- [smb2.1] : FAIL
-      |     |   |- [smb2] : FAIL
+      |     |   |- [smb3] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 101
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 102
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 103
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 104
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 105
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 106
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 107
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 108
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 109
-      |     |   |- [smb3] : FAIL
-      |     |   |- [smb2.1] : FAIL
-      |     |   |- [smb2] : FAIL
+      |     |   |- [smb3] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 110
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 111
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 112
-      |     |   |- [smb3] : FAIL
-      |     |   |- [smb2.1] : FAIL
-      |     |   |- [smb2] : FAIL
-      |     |   |- [cifs] : FAIL
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
       |     |- 113
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 114
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 115
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 116
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 117
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : PASS
-      |     |- 118
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 119
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 120
       |     |   |- [smb3] : FAIL
-      |     |   |- [smb2.1] : FAIL
-      |     |   |- [smb2] : FAIL
-      |     |   |- [cifs] : FAIL
-      |     |- 121
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 122
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 123
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
+      |     |   |- [cifs] : PASS
       |     |- 124
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
       |     |- 125
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 126
-      |     |   |- [smb3] : FAIL
-      |     |   |- [smb2.1] : FAIL
-      |     |   |- [smb2] : FAIL
-      |     |   |- [cifs] : FAIL
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
       |     |- 127
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
-      |     |   |- [cifs] : FAIL
-      |     |- 128
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
+      |     |   |- [cifs] : PASS
       |     |- 129
-      |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
+      |     |   |- [smb3] : FAIL
       |     |   |- [cifs] : PASS
       |     |- 130
-      |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
-      |     |   |- [cifs] : FAIL
-      |     |- 131
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : FAIL
-      |     |- 132
-      |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
+      |     |   |- [smb3] : FAIL
       |     |   |- [cifs] : PASS
       |     |- 133
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 134
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 135
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
-      |     |   |- [cifs] : FAIL
-      |     |- 136
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 137
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 138
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 139
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 140
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
+      |     |   |- [cifs] : PASS
       |     |- 141
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 142
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 143
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 144
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 145
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 146
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 147
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 148
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 149
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 150
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 151
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 152
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 153
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 154
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 155
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 156
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 157
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 158
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 159
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 160
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 161
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 162
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 163
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 164
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 165
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 166
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 167
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 168
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 169
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 170
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 171
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 172
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 173
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 174
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 175
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 176
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 177
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 178
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 179
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 180
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 181
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 182
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 183
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 184
-      |     |   |- [smb3] : FAIL
-      |     |   |- [smb2.1] : FAIL
-      |     |   |- [smb2] : FAIL
-      |     |   |- [cifs] : FAIL
-      |     |- 185
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 186
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 187
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 188
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 189
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 190
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 191
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 192
-      |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
-      |     |   |- [cifs] : PASS
-      |     |- 193
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 194
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 195
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 196
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 197
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 198
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
-      |     |   |- [cifs] : FAIL
-      |     |- 199
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 200
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 201
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 202
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 203
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 204
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 205
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 206
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
+      |     |   |- [cifs] : PASS
       |     |- 207
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
-      |     |   |- [cifs] : FAIL
-      |     |- 208
-      |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
-      |     |   |- [cifs] : FAIL
-      |     |- 209
-      |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
-      |     |   |- [cifs] : FAIL
+      |     |   |- [cifs] : PASS
       |     |- 210
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
       |     |- 211
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
       |     |- 212
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 213
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 214
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 215
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 216
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 217
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 218
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 219
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 220
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 221
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 222
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 223
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 224
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 225
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 226
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 227
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 228
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 229
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 230
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 231
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 232
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 233
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 234
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 235
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 236
-      |     |   |- [smb3] : FAIL
-      |     |   |- [smb2.1] : FAIL
-      |     |   |- [smb2] : FAIL
-      |     |   |- [cifs] : PASS
-      |     |- 237
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 238
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 239
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
-      |     |   |- [cifs] : FAIL
-      |     |- 240
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 241
-      |     |   |- [smb3] : FAIL
-      |     |   |- [smb2.1] : FAIL
-      |     |   |- [smb2] : FAIL
       |     |   |- [cifs] : PASS
-      |     |- 242
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 243
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 244
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 245
       |     |   |- [smb3] : FAIL
-      |     |   |- [smb2.1] : FAIL
-      |     |   |- [smb2] : FAIL
-      |     |   |- [cifs] : FAIL
+      |     |   |- [cifs] : PASS
       |     |- 246
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
       |     |- 247
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
       |     |- 248
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
       |     |- 249
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 250
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 251
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 252
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 253
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 254
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 255
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 256
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 257
-      |     |   |- [smb3] : FAIL
-      |     |   |- [smb2.1] : FAIL
-      |     |   |- [smb2] : FAIL
-      |     |   |- [cifs] : FAIL
-      |     |- 258
-      |     |   |- [smb3] : FAIL
-      |     |   |- [smb2.1] : FAIL
-      |     |   |- [smb2] : FAIL
-      |     |   |- [cifs] : FAIL
-      |     |- 259
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 260
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 261
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 262
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
       |     |- 263
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 264
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 265
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 266
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 267
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 268
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 269
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 270
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 271
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 272
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 273
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 274
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 275
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 276
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 277
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 278
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 279
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 280
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 281
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 282
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 283
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 284
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 285
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
       |     |- 286
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 287
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 288
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 289
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 290
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 291
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 292
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 293
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 294
-      |     |   |- [smb3] : FAIL
-      |     |   |- [smb2.1] : FAIL
-      |     |   |- [smb2] : FAIL
-      |     |   |- [cifs] : FAIL
-      |     |- 295
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 296
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 297
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 298
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 299
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 300
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 301
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 302
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 303
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 304
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 305
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 306
-      |     |   |- [smb3] : FAIL
-      |     |   |- [smb2.1] : FAIL
-      |     |   |- [smb2] : FAIL
-      |     |   |- [cifs] : FAIL
-      |     |- 307
-      |     |   |- [smb3] : FAIL
-      |     |   |- [smb2.1] : FAIL
-      |     |   |- [smb2] : FAIL
-      |     |   |- [cifs] : FAIL
       |     |- 308
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
       |     |- 309
-      |     |   |- [smb3] : FAIL
-      |     |   |- [smb2.1] : FAIL
-      |     |   |- [smb2] : FAIL
-      |     |   |- [cifs] : PASS
-      |     |- 310
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 311
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 312
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 313
-      |     |   |- [smb3] : FAIL
-      |     |   |- [smb2.1] : FAIL
-      |     |   |- [smb2] : FAIL
-      |     |   |- [cifs] : FAIL
-      |     |- 314
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 315
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 316
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 317
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 318
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 319
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 320
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 321
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 322
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
       |     |- 323
       |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 324
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 325
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 326
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 327
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 328
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 329
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 330
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 331
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 332
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 333
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 334
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 335
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 336
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
       |     |- 337
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : PASS
-      |     |- 338
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 339
-      |     |   |- [smb3] : PASS
-      |     |   |- [smb2.1] : PASS
-      |     |   |- [smb2] : PASS
-      |     |   |- [cifs] : PASS
+      |     |   |- [smb3] : FAIL
+      |     |   |- [cifs] : FAIL
       |     |- 340
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 341
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |     |- 342
-      |     |   |- [smb3] : NOT RUN
-      |     |   |- [smb2.1] : NOT RUN
-      |     |   |- [smb2] : NOT RUN
-      |     |   |- [cifs] : NOT RUN
-      |
-      |- shared
-            |- 000
-            |   |- [smb3] : NOT RUN
-            |   |- [smb2.1] : NOT RUN
-            |   |- [smb2] : NOT RUN
-            |   |- [cifs] : NOT RUN
-            |- 002
-            |   |- [smb3] : NOT RUN
-            |   |- [smb2.1] : NOT RUN
-            |   |- [smb2] : NOT RUN
-            |   |- [cifs] : NOT RUN
-            |- 003
-            |   |- [smb3] : NOT RUN
-            |   |- [smb2.1] : NOT RUN
-            |   |- [smb2] : NOT RUN
-            |   |- [cifs] : NOT RUN
-            |- 006
-            |   |- [smb3] : NOT RUN
-            |   |- [smb2.1] : NOT RUN
-            |   |- [smb2] : NOT RUN
-            |   |- [cifs] : NOT RUN
-            |- 032
-            |   |- [smb3] : NOT RUN
-            |   |- [smb2.1] : NOT RUN
-            |   |- [smb2] : NOT RUN
-            |   |- [cifs] : NOT RUN
-            |- 051
-            |   |- [smb3] : NOT RUN
-            |   |- [smb2.1] : NOT RUN
-            |   |- [smb2] : NOT RUN
-            |   |- [cifs] : NOT RUN
-            |- 272
-            |   |- [smb3] : NOT RUN
-            |   |- [smb2.1] : NOT RUN
-            |   |- [smb2] : NOT RUN
-            |   |- [cifs] : NOT RUN
-            |- 289
-            |   |- [smb3] : NOT RUN
-            |   |- [smb2.1] : NOT RUN
-            |   |- [smb2] : NOT RUN
-            |   |- [cifs] : NOT RUN
-            |- 298
-            |   |- [smb3] : NOT RUN
-            |   |- [smb2.1] : NOT RUN
-            |   |- [smb2] : NOT RUN
-            |   |- [cifs] : NOT RUN
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
+      |     |- 344
+      |     |   |- [smb3] : FAIL
+      |     |   |- [cifs] : FAIL
+      |     |- 345
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
+      |     |- 346
+      |     |   |- [smb3] : FAIL
+      |     |   |- [cifs] : FAIL
+      |     |- 354
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
+      |     |- 360
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
+      |     |- 393
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
+      |     |- 394
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
+      |     |- 406
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
+      |     |- 412
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
+      |     |- 436
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
+      |     |- 437
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
+      |     |- 438
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
+      |     |- 445
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
+      |     |- 448
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
+      |     |- 451
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
+      |     |- 460
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
+      |     |- 464
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
+      |     |- 465
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
+      |     |- 469
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
+      |     |- 476
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
+      |     |- 486
+      |     |   |- [smb3] : FAIL
+      |     |   |- [cifs] : FAIL
+      |     |- 490
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
+      |     |- 504
+      |     |   |- [smb3] : FAIL
+      |     |   |- [cifs] : FAIL
