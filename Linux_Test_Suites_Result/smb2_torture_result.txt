@@ -2,7 +2,7 @@
  * SMB2/3 TORTURE TEST RESULT
 ================================================================================
 
-* smb2(Total : 214, PASS : 172, FAIL : 42)
+* smb2(Total : 216, PASS : 174, FAIL : 42)
    |- connect : PASS (1/1)
    |
    |- scan (4/4)
@@ -339,12 +339,16 @@
    |   |- replay5 : FAIL
    |
    |- delete-on-close-perms (0/6)
-       |- OVERWRITE_IF : FAIL
-       |- OVERWRITE_IF Existing : FAIL
-       |- CREATE : FAIL
-       |- CREATE Existing : FAIL
-       |- CREATE_IF : FAIL
-       |- CREATE_IF Existing : FAIL
+   |   |- OVERWRITE_IF : FAIL
+   |   |- OVERWRITE_IF Existing : FAIL
+   |   |- CREATE : FAIL
+   |   |- CREATE Existing : FAIL
+   |   |- CREATE_IF : FAIL
+   |   |- CREATE_IF Existing : FAIL
+   |
+   |- sharemode (2/2)
+   |   |- sharemode-access : PASS
+   |   |- access-sharemode : PASS
 
 * local  (4/4)
    |- ntlmssp (1/1)
