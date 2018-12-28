@@ -1,8 +1,8 @@
 ================================================================================
- * SMB2/3 TORTURE TEST RESULT
+ * SMB2/3 TORTURE TEST RESULT (In samba 4.9.1)
 ================================================================================
 
-* smb2(Total : 216, PASS : 174, FAIL : 42)
+* smb2(Total : 217, PASS : 175, FAIL : 42)
    |- connect : PASS (1/1)
    |
    |- scan (4/4)
@@ -44,10 +44,11 @@
    |   |- truncate : PASS
    |   |- replay : FAIL
    |
-   |- read (3/3)
+   |- read (4/4)
    |   |- eof : PASS
    |   |- position : PASS
    |   |- dir : PASS
+   |   |- access : PASS
    |
    |- create (9/12)
    |   |- gentest : PASS
