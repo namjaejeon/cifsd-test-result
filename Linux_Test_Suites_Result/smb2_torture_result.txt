@@ -2,7 +2,7 @@
  * SMB2/3 TORTURE TEST RESULT (In samba 4.9.1)
 ================================================================================
 
-* smb2(Total : 217, PASS : 175, FAIL : 42)
+* smb2(Total : 218, PASS : 176, FAIL : 42)
    |- connect : PASS (1/1)
    |
    |- scan (4/4)
@@ -11,12 +11,13 @@
    |   |- setinfo : PASS
    |   |- find : PASS
    |
-   |- getinfo (4/5)
+   |- getinfo (5/6)
    |   |- complex : PASS
    |   |- fsinfo : PASS
    |   |- qfs_buffercheck : PASS
    |   |- qfile_buffercheck : PASS
    |   |- qsec_buffercheck : FAIL
+   |   |- granted : PASS
    |
    |- setinfo : PASS (1/1, w/o sec desc)
    |
