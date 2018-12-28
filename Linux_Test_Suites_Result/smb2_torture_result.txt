@@ -2,7 +2,7 @@
  * SMB2/3 TORTURE TEST RESULT (In samba 4.9.1)
 ================================================================================
 
-* smb2(Total : 218, PASS : 176, FAIL : 42)
+* smb2(Total : 219, PASS : 177, FAIL : 42)
    |- connect : PASS (1/1)
    |
    |- scan (4/4)
@@ -351,6 +351,8 @@
    |- sharemode (2/2)
    |   |- sharemode-access : PASS
    |   |- access-sharemode : PASS
+   |
+   |- maxfid : PASS (1/1)
 
 * local  (4/4)
    |- ntlmssp (1/1)
