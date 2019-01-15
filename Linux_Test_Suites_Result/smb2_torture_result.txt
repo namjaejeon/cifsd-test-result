@@ -2,7 +2,7 @@
  * SMB2/3 TORTURE TEST RESULT (In samba 4.9.1)
 ================================================================================
 
-* smb2(Total : 219, PASS : 177, FAIL : 42)
+* smb2(Total : 220, PASS : 182, FAIL : 38)
    |- connect : PASS (1/1)
    |
    |- scan (4/4)
@@ -340,13 +340,14 @@
    |   |- replay4 : FAIL
    |   |- replay5 : FAIL
    |
-   |- delete-on-close-perms (0/6)
-   |   |- OVERWRITE_IF : FAIL
+   |- delete-on-close-perms (5/7)
+   |   |- OVERWRITE_IF : PASS
    |   |- OVERWRITE_IF Existing : FAIL
-   |   |- CREATE : FAIL
-   |   |- CREATE Existing : FAIL
-   |   |- CREATE_IF : FAIL
+   |   |- CREATE : PASS
+   |   |- CREATE Existing : PASS
+   |   |- CREATE_IF : PASS
    |   |- CREATE_IF Existing : FAIL
+   |   |- FIND_and_set_DOC : PASS
    |
    |- sharemode (2/2)
    |   |- sharemode-access : PASS
