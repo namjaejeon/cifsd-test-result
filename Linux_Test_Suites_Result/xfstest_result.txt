@@ -8,7 +8,7 @@
  TEST_DIR=/mnt/test
  TEST_FS_MOUNT_OPTIONS='-ousername=test,noperm,vers=3.0,mfsymlinks,actimeo=0,password=testpass'
 [Test Result Summary]
- Current PASS Count / TOTAL Testcase Count : 74 / 86
+ Current PASS Count / TOTAL Testcase Count : 78 / 83
 
 [cifs]
  FSTYP=cifs
@@ -16,7 +16,7 @@
  TEST_DIR=/mnt/test
  TEST_FS_MOUNT_OPTIONS='-ousername=test,noperm,cifacl,mfsymlinks,actimeo=0,password=testpass'
 [Test Result Summary]
- Current PASS Count / TOTAL Testcase Count : 77 / 86
+ Current PASS Count / TOTAL Testcase Count : 78 / 83
 
 
 * xfstests test detail
@@ -72,7 +72,7 @@
       |     |   |- [smb3] : PASS
       |     |   |- [cifs] : PASS
       |     |- 037
-      |     |   |- [smb3] : FAIL
+      |     |   |- [smb3] : PASS
       |     |   |- [cifs] : FAIL
       |     |- 069
       |     |   |- [smb3] : PASS
@@ -114,7 +114,7 @@
       |     |   |- [smb3] : PASS
       |     |   |- [cifs] : PASS
       |     |- 117
-      |     |   |- [smb3] : FAIL
+      |     |   |- [smb3] : PASS
       |     |   |- [cifs] : PASS
       |     |- 124
       |     |   |- [smb3] : PASS
@@ -207,20 +207,14 @@
       |     |   |- [smb3] : PASS
       |     |   |- [cifs] : PASS
       |     |- 337
-      |     |   |- [smb3] : FAIL
+      |     |   |- [smb3] : PASS
       |     |   |- [cifs] : FAIL
       |     |- 340
       |     |   |- [smb3] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 344
-      |     |   |- [smb3] : FAIL
-      |     |   |- [cifs] : FAIL
       |     |- 345
       |     |   |- [smb3] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 346
-      |     |   |- [smb3] : FAIL
-      |     |   |- [cifs] : FAIL
       |     |- 354
       |     |   |- [smb3] : PASS
       |     |   |- [cifs] : PASS
@@ -272,12 +266,9 @@
       |     |- 476
       |     |   |- [smb3] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 486
-      |     |   |- [smb3] : FAIL
-      |     |   |- [cifs] : FAIL
       |     |- 490
       |     |   |- [smb3] : PASS
       |     |   |- [cifs] : PASS
       |     |- 504
-      |     |   |- [smb3] : FAIL
-      |     |   |- [cifs] : FAIL
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
