@@ -249,25 +249,29 @@
    |
    |- ioctl (Not Support, 1/59)
    |   |- shadow_copy : FAIL
-   |   |- req_resume_key : FAIL
-   |   |- copy_chunk_simple : FAIL
-   |   |- copy_chunk_multi : FAIL
-   |   |- copy_chunk_tiny : FAIL
-   |   |- copy_chunk_overwrite : FAIL
-   |   |- copy_chunk_append : FAIL
-   |   |- copy_chunk_limits : FAIL
-   |   |- copy_chunk_src_lock : FAIL
-   |   |- copy_chunk_dest_lock : FAIL
-   |   |- copy_chunk_bad_key : FAIL
-   |   |- copy_chunk_src_is_dest : FAIL
+   |   |- req_resume_key : PASS
+   |   |- copy_chunk_simple : PASS
+   |   |- copy_chunk_multi : PASS
+   |   |- copy_chunk_tiny : PASS
+   |   |- copy_chunk_overwrite : PASS
+   |   |- copy_chunk_append : PASS
+   |   |- copy_chunk_limits : PASS
+   |   |- copy_chunk_src_lock : PASS
+   |   |- copy_chunk_dest_lock : PASS
+   |   |- copy_chunk_bad_key : PASS
+   |   |- copy_chunk_src_is_dest : PASS
    |   |- copy_chunk_src_is_dest_overlap : FAIL
    |   |- copy_chunk_bad_access : FAIL
-   |   |- copy_chunk_write_access : FAIL
-   |   |- copy_chunk_src_exceed : FAIL
-   |   |- copy_chunk_src_exceed_multi : FAIL
-   |   |- copy_chunk_sparse_dest : FAIL
-   |   |- copy_chunk_max_output_sz : FAIL
-   |   |- copy_chunk_zero_length : FAIL
+   |   |- copy_chunk_write_access : PASS
+   |   |- copy_chunk_src_exceed : PASS
+   |   |- copy_chunk_src_exceed_multi : PASS
+   |   |- copy_chunk_sparse_dest : PASS
+   |   |- copy_chunk_max_output_sz : PASS
+   |   |- copy_chunk_zero_length : PASS
+   |   |- copy-chunk streams : FAIL
+   |   |- copy_chunk_across_shares : PASS
+   |   |- copy_chunk_across_shares2 : PASS
+   |   |- copy_chunk_across_shares3 : PASS
    |   |- compress_file_flag : FAIL
    |   |- compress_dir_inherit : FAIL
    |   |- compress_invalid_format : FAIL
