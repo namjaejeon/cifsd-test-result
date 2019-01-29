@@ -2,7 +2,7 @@
  * SMB2/3 TORTURE TEST RESULT (In samba 4.9.1)
 ================================================================================
 
-* smb2(Total : 220, PASS : 182, FAIL : 38)
+* smb2(Total : 272, PASS : 203, FAIL : 69)
    |- connect : PASS (1/1)
    |
    |- scan (4/4)
@@ -247,7 +247,7 @@
    |   |- delete : PASS
    |   |- zero-byte : PASS
    |
-   |- ioctl (Not Support, 1/59)
+   |- ioctl (21/52)
    |   |- shadow_copy : FAIL
    |   |- req_resume_key : PASS
    |   |- copy_chunk_simple : PASS
