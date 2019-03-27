@@ -8,7 +8,7 @@
  TEST_DIR=/mnt/test
  TEST_FS_MOUNT_OPTIONS='-ousername=test,noperm,vers=3.0,mfsymlinks,actimeo=0,password=testpass'
 [Test Result Summary]
- Current PASS Count / TOTAL Testcase Count : 78 / 83
+ Current PASS Count / TOTAL Testcase Count : 82 / 82
 
 [cifs]
  FSTYP=cifs
@@ -16,14 +16,14 @@
  TEST_DIR=/mnt/test
  TEST_FS_MOUNT_OPTIONS='-ousername=test,noperm,cifacl,mfsymlinks,actimeo=0,password=testpass'
 [Test Result Summary]
- Current PASS Count / TOTAL Testcase Count : 78 / 83
+ Current PASS Count / TOTAL Testcase Count : 79 / 82
 
 
 * xfstests test detail
       |
       |- cifs
       |     |- 001
-      |         |- [smb3] : FAIL
+      |         |- [smb3] : PASS
       |         |- [cifs] : FAIL
       |- generic
       |     |- 001
@@ -50,11 +50,8 @@
       |     |- 014
       |     |   |- [smb3] : PASS
       |     |   |- [cifs] : PASS
-      |     |- 020
-      |     |   |- [smb3] : FAIL
-      |     |   |- [cifs] : FAIL
       |     |- 023
-      |     |   |- [smb3] : FAIL
+      |     |   |- [smb3] : PASS
       |     |   |- [cifs] : PASS
       |     |- 024
       |     |   |- [smb3] : PASS
@@ -78,8 +75,8 @@
       |     |   |- [smb3] : PASS
       |     |   |- [cifs] : PASS
       |     |- 070
-      |     |   |- [smb3] : FAIL
-      |     |   |- [cifs] : FAIL
+      |     |   |- [smb3] : PASS
+      |     |   |- [cifs] : PASS
       |     |- 074
       |     |   |- [smb3] : PASS
       |     |   |- [cifs] : PASS
@@ -168,7 +165,7 @@
       |     |   |- [smb3] : PASS
       |     |   |- [cifs] : PASS
       |     |- 245
-      |     |   |- [smb3] : FAIL
+      |     |   |- [smb3] : PASS
       |     |   |- [cifs] : PASS
       |     |- 246
       |     |   |- [smb3] : PASS
