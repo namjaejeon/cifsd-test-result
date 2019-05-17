@@ -2,7 +2,7 @@
  * SMB2/3 TORTURE TEST RESULT (In samba 4.9.1)
 ================================================================================
 
-* smb2(Total : 272, PASS : 203, FAIL : 69)
+* smb2(Total : 311, PASS : 205, FAIL : 11, NOT SUPPORT FAIL : 95)
    |- connect : PASS (1/1)
    |
    |- scan (4/4)
@@ -16,7 +16,7 @@
    |   |- fsinfo : PASS
    |   |- qfs_buffercheck : PASS
    |   |- qfile_buffercheck : PASS
-   |   |- qsec_buffercheck : FAIL
+   |   |- qsec_buffercheck : NOT SUPPORT
    |   |- granted : PASS
    |
    |- setinfo : PASS (1/1, w/o sec desc)
@@ -60,12 +60,12 @@
    |   |- delete : PASS
    |   |- leading-slash : PASS
    |   |- impersonation : PASS
-   |   |- aclfile : FAIL
-   |   |- nulldacl : FAIL
+   |   |- aclfile : NOT SUPPORT
+   |   |- nulldacl : NOT SUPPORT
    |   |- mkdir-dup : PASS
    |   |- dir-alloc-size : FAIL
    |
-   |- acls (0/7)
+   |- acls (0/7 NOT SUPPORT)
    |   |- CREATOR : FAIL
    |   |- GENERIC : FAIL
    |   |- OWNER : FAIL
@@ -87,7 +87,7 @@
    |   |- compound-break : PASS
    |   |- compound-padding : PASS
    |
-   |- notify (0/22)
+   |- notify (0/22 NOT SUPPORT)
    |   |- valid-req : FAIL
    |   |- tcon : FAIL
    |   |- dir : FAIL
@@ -111,7 +111,7 @@
    |   |- rmdir3 : FAIL
    |   |- rmdir4 : FAIL
    |
-   |- change_notify_disabled.notfiy_disabled : FAIL (0/1)
+   |- change_notify_disabled.notfiy_disabled : PASS (1/1)
    |
    |- durable-open (19/20)
    |   |- open-oplock : PASS
@@ -120,7 +120,7 @@
    |   |- reopen1a : PASS
    |   |- reopen2 : PASS
    |   |- reopen2-lease : PASS
-   |   |- reopen2-lease-v2 : FAIL
+   |   |- reopen2-lease-v2 : NOT SUPPORT(v2 lease)
    |   |- reopen2a : PASS
    |   |- reopen3 : PASS
    |   |- reopen4 : PASS
@@ -147,7 +147,7 @@
    |   |- reopen2 : PASS
    |   |- reopen2b : PASS
    |   |- reopen2-lease : PASS
-   |   |- reopen2-lease-v2 : FAIL
+   |   |- reopen2-lease-v2 : NOT SUPPORT(v2 lease)
    |   |- app-instance : PASS
    |   |- persistent-open-oplock : PASS
    |   |- persistent-open-lease : PASS
@@ -162,7 +162,7 @@
    |   |- file-index : PASS
    |   |- large-files : PASS
    |
-   |- lease (18/18)
+   |- lease (18/29)
    |   |- request : PASS
    |   |- break_twice : NOT SUPPORT(v2 lease)
    |   |- nobreakself : PASS
@@ -317,7 +317,7 @@
    |
    |- hold-oplock : FAIL (0/1)
    |
-   |- session (5/8)
+   |- session (5/10)
    |   |- reconnect1 : PASS
    |   |- reconnect2 : PASS
    |   |- reauth1 : PASS
