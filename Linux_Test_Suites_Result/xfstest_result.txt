@@ -1,5 +1,5 @@
 ================================================================================
- * XFSTESTS TEST RESULT(2018.12.17 version)
+ * XFSTESTS TEST RESULT(2020.02.11 version)
 ================================================================================\
 
 [smb3]
@@ -8,7 +8,7 @@
  TEST_DIR=/mnt/test
  TEST_FS_MOUNT_OPTIONS='-ousername=test,noperm,vers=3.0,mfsymlinks,actimeo=0,password=testpass'
 [Test Result Summary]
- Current PASS Count / TOTAL Testcase Count : 82 / 82
+ Current PASS Count / TOTAL Testcase Count : 95 / 107
 
 [cifs]
  FSTYP=cifs
