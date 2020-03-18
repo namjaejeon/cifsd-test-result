@@ -45,10 +45,10 @@
       |     |   |- [smb3] : not run
       |     |   |- [cifs] : not run
       |     |- 011
-      |     |   |- [smb3] : FAIL
+      |     |   |- [smb3] : PASS
       |     |   |- [cifs] : PASS
       |     |- 013
-      |     |   |- [smb3] : FAIL
+      |     |   |- [smb3] : PASS
       |     |   |- [cifs] : FAIL
       |     |- 014
       |     |   |- [smb3] : PASS
@@ -236,7 +236,7 @@
       |     |   |- [smb3] : PASS
       |     |   |- [cifs] : not run
       |     |- 323
-      |     |   |- [smb3] : FAIL
+      |     |   |- [smb3] : PASS
       |     |   |- [cifs] : PASS
       |     |- 339
       |     |   |- [smb3] : PASS
